@@ -1,0 +1,33 @@
+name: test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch upstream sources
+        run: |
+          git clone --depth 1 https://github.com/Gathin23/cleanyourtv.git ../cleanyourtv
+          git clone --depth 1 https://github.com/Perflyst/PiHoleBlocklist.git ../PiHoleBlocklist
+
+      - name: Rebuild index (picks up community/ models from this PR)
+        run: python3 -I tools/build_index.py --cleanyourtv ../cleanyourtv --perflyst ../PiHoleBlocklist
+
+      - name: Validate every list and the index
+        run: python3 -I tools/validate.py
+
+      - name: End-to-end test against a fake TV
+        run: python3 -I tests/test_tvlib.py

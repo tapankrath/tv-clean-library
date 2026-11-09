@@ -6,6 +6,7 @@
 
 Run it from the library root. It only reads the upstream checkouts and writes inside this library:
   models/<platform>/<id>/      copied debloat*.txt, tv.json, README.md (MIT, see THIRD_PARTY.md)
+                               (community/<platform>/<id>/ is never touched, only indexed)
   index/models.json, .csv      one row per tested model, plus brand-level rows for closed platforms
   index/MODELS.md              browsable table
   brands/<brand>/consensus.txt packages a brand's tested lists agree on, with counts
@@ -74,20 +75,26 @@ def header_tokens(text):
     return sorted({t for t in re.findall(r"[a-z0-9][a-z0-9_\-]{2,}", head.lower()) if any(c.isdigit() for c in t)})
 
 
-def import_models(cyt):
-    rows, by_brand = [], defaultdict(list)
-    ex = cyt / "examples"
-    for tvj in sorted(ex.glob("*/tv.json")):
+def import_models(cyt, rows=None, by_brand=None, community=False):
+    """Upstream: copy cleanyourtv examples into models/. Community: index community/<platform>/<id> in place."""
+    rows = [] if rows is None else rows
+    by_brand = defaultdict(list) if by_brand is None else by_brand
+    pattern = "*/*/tv.json" if community else "*/tv.json"
+    base = cyt if community else cyt / "examples"
+    for tvj in sorted(base.glob(pattern)):
         folder = tvj.parent
         meta = json.loads(tvj.read_text(encoding="utf-8"))
         lists = sorted(folder.glob("debloat*.txt"))
         if not lists:
             continue
-        platform = platform_of(meta.get("os", ""))
-        dest = ROOT / "models" / platform / folder.name
-        dest.mkdir(parents=True, exist_ok=True)
-        for f in lists + [tvj] + [p for p in [folder / "README.md"] if p.exists()]:
-            shutil.copyfile(f, dest / f.name)
+        platform = folder.parent.name if community else platform_of(meta.get("os", ""))
+        if community:
+            dest = folder
+        else:
+            dest = ROOT / "models" / platform / folder.name
+            dest.mkdir(parents=True, exist_ok=True)
+            for f in lists + [tvj] + [p for p in [folder / "README.md"] if p.exists()]:
+                shutil.copyfile(f, dest / f.name)
         main = read_list(lists[0].read_text(encoding="utf-8-sig", errors="replace"))
         tokens = set(header_tokens(lists[0].read_text(encoding="utf-8-sig", errors="replace")))
         tokens |= {t for t in re.findall(r"[a-z0-9][a-z0-9\-]{2,}", (meta["tv"] + " " + folder.name).lower()) if any(c.isdigit() for c in t)}
@@ -104,8 +111,8 @@ def import_models(cyt):
             "package_count": len(main),
             "notes": meta.get("notes", ""),
             "match_tokens": sorted(tokens),
-            "status": "tested-by-submitter",
-            "source": UPSTREAM_URL + folder.name,
+            "status": "community-tested" if community else "tested-by-submitter",
+            "source": str(folder.relative_to(ROOT)) if community else UPSTREAM_URL + folder.name,
         }
         rows.append(row)
         by_brand[b].append(main)
@@ -225,11 +232,13 @@ def main():
         if (ROOT / sub).exists() and sub != "dns":
             shutil.rmtree(ROOT / sub)
     rows, by_brand = import_models(a.cleanyourtv)
+    if (ROOT / "community").exists():
+        import_models(ROOT / "community", rows, by_brand, community=True)
     write_consensus(by_brand, rows)
     dns = write_dns(a.perflyst)
     rows += closed_rows()
     write_index(rows)
-    print(f"models: {sum(1 for r in rows if r['lists'])}  brands with consensus: {len(by_brand)}  "
+    print(f"community: {sum(1 for r in rows if r['status'] == 'community-tested')}  models: {sum(1 for r in rows if r['lists'])}  brands with consensus: {len(by_brand)}  "
           f"closed-platform rows: {len(CLOSED)}  dns files: {', '.join(dns)}")
 
 

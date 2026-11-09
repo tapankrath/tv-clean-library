@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Lists from the upstream project (cleanyourtv)
+    url: https://github.com/Gathin23/cleanyourtv
+    about: Most model lists here come from cleanyourtv. List bugs for models under models/ can also be reported there.

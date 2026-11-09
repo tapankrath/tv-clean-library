@@ -19,6 +19,7 @@ platforms/      what each TV OS allows, settings paths, traps (the first thing t
 models/         one folder per tested model: debloat.txt, tv.json, README.md
   android-tv/   439 models
   fire-os/      18 models
+community/      lists contributed here (see CONTRIBUTING.md); never overwritten by the sync
 brands/         consensus.txt per brand: packages its tested lists agree on, with counts
 dns/            per-brand blocklists; '#domain' lines are deliberately left unblocked
 index/          models.json / models.csv / MODELS.md: every model + closed-platform rows
@@ -59,13 +60,18 @@ python3 -I tools/tvlib.py restore --all     # undo everything
 - `playbook`: closed platform, settings + DNS guidance only.
 - Consensus lists are **not** tested as a set: they are a starting point for review.
 
+## Contributing
+
+Cleaned up a TV that isn't listed? Add it: `CONTRIBUTING.md`, or open an **Add my TV model** issue.
+Upstream lists are pulled in weekly by a bot pull request.
+
 ## Rebuilding the index
 
 ```
 git clone https://github.com/Gathin23/cleanyourtv ../cleanyourtv
 git clone https://github.com/Perflyst/PiHoleBlocklist ../PiHoleBlocklist
 python3 -I tools/build_index.py --cleanyourtv ../cleanyourtv --perflyst ../PiHoleBlocklist
-python3 -I tests/test_tvlib.py
+python3 -I tools/validate.py && python3 -I tests/test_tvlib.py
 ```
 
 ## Limits

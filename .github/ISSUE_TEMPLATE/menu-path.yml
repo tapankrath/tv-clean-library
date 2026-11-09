@@ -1,0 +1,30 @@
+name: Settings menu changed
+description: A path in platforms/*.md is wrong or moved after a firmware update.
+title: "[Menu] <brand>: <setting>"
+labels: [docs]
+body:
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform page
+      options: [android-tv, fire-os, samsung-tizen, lg-webos, roku, vizio-smartcast, hisense-vidaa, other-closed]
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: TV model, model year and firmware version
+      placeholder: Samsung QN65S90D, 2024, firmware 1640
+    validations:
+      required: true
+  - type: textarea
+    id: path
+    attributes:
+      label: The correct path, exactly as the TV shows it
+      placeholder: Settings › All Settings › General & Privacy › Terms & Privacy › Privacy Choices
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Photo of the screen (optional, helps a lot)

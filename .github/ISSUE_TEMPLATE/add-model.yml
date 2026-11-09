@@ -1,0 +1,61 @@
+name: Add my TV model
+description: You cleaned up a TV that has no list here. Share what you disabled.
+title: "[Model] <brand> <model>"
+labels: [new-model]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks! Only submit after you've **used the TV for a few days** with the changes.
+        Prefer a pull request? See CONTRIBUTING.md: put the folder in `community/<platform>/<brand-model>/`.
+  - type: input
+    id: model
+    attributes:
+      label: Brand and model (as on the sticker)
+      placeholder: TCL 55Q651G
+    validations:
+      required: true
+  - type: textarea
+    id: props
+    attributes:
+      label: Output of these commands
+      description: |
+        adb shell getprop ro.product.model
+        adb shell getprop ro.product.device
+        adb shell getprop ro.build.version.release
+        adb shell getprop ro.build.version.incremental
+      render: text
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options: [Google TV, Android TV, Fire TV]
+    validations:
+      required: true
+  - type: textarea
+    id: list
+    attributes:
+      label: Packages you disabled (one per line, with what each is)
+      description: "`python3 -I tools/tvlib.py verify` lists them, or `adb shell pm list packages -d`"
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: kept
+    attributes:
+      label: What you deliberately kept on, and why
+      placeholder: "com.tcl.ttvs - system updates; Netflix; casting"
+  - type: textarea
+    id: issues
+    attributes:
+      label: Anything that went wrong or needed care
+      placeholder: "Had to wait before rebooting; keyboard broke until X re-enabled; new launcher didn't take Home until..."
+  - type: input
+    id: days
+    attributes:
+      label: How long you've used the TV since
+      placeholder: 5 days
+    validations:
+      required: true

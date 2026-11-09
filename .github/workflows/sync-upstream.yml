@@ -1,0 +1,60 @@
+name: sync-upstream
+
+# Every Monday: pull new model lists from cleanyourtv and new domains from Perflyst, rebuild the index,
+# validate, test, and open a pull request if anything changed. Nothing lands on main without review.
+on:
+  schedule:
+    - cron: "17 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch upstream sources
+        id: upstream
+        run: |
+          git clone --depth 1 https://github.com/Gathin23/cleanyourtv.git ../cleanyourtv
+          git clone --depth 1 https://github.com/Perflyst/PiHoleBlocklist.git ../PiHoleBlocklist
+          echo "cyt=$(git -C ../cleanyourtv rev-parse --short HEAD)" >> "$GITHUB_OUTPUT"
+          echo "pf=$(git -C ../PiHoleBlocklist rev-parse --short HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Rebuild
+        id: build
+        run: |
+          summary=$(python3 -I tools/build_index.py --cleanyourtv ../cleanyourtv --perflyst ../PiHoleBlocklist)
+          echo "$summary"
+          echo "summary=$summary" >> "$GITHUB_OUTPUT"
+
+      - name: Validate and test
+        run: |
+          python3 -I tools/validate.py
+          python3 -I tests/test_tvlib.py
+
+      - name: Open pull request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: bot/sync-upstream
+          delete-branch: true
+          commit-message: "Sync upstream lists (cleanyourtv ${{ steps.upstream.outputs.cyt }}, PiHoleBlocklist ${{ steps.upstream.outputs.pf }})"
+          title: "Weekly upstream sync"
+          body: |
+            Automated rebuild from upstream.
+
+            - cleanyourtv: `${{ steps.upstream.outputs.cyt }}`
+            - PiHoleBlocklist: `${{ steps.upstream.outputs.pf }}`
+            - Result: `${{ steps.build.outputs.summary }}`
+
+            Validation and the fake-TV test passed. Skim `index/MODELS.md` for new models and any
+            removed ones before merging.
+          labels: upstream-sync

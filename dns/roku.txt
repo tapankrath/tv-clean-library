@@ -1,0 +1,12 @@
+# roku: domains from Perflyst/PiHoleBlocklist SmartTV.txt (MIT). Generated, do not edit by hand.
+# Lines starting with '#<domain>' are NOT blocked on purpose: upstream reports they break apps,
+# updates or connectivity. Keep them commented.
+
+austin.logs.roku.com
+cooper.logs.roku.com
+display.ravm.tv
+liberty.logs.roku.com
+midland.logs.roku.com
+mobile.logs.roku.com
+ravm.tv
+scribe.logs.roku.com

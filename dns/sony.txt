@@ -1,0 +1,29 @@
+# sony: domains from Perflyst/PiHoleBlocklist SmartTV.txt (MIT). Generated, do not edit by hand.
+# Lines starting with '#<domain>' are NOT blocked on purpose: upstream reports they break apps,
+# updates or connectivity. Keep them commented.
+
+ad8641f3cff742de893d919add74c2bb.ssm1.internet.sony.tv
+ad8641f3cff742de893d919add74c2bb.ssm2.internet.sony.tv
+api-mf1.meta.ndmdhs.com
+api.cid.samba.tv
+b02.black.ndmdhs.com
+bdcore-apr-lb.bda.ndmdhs.com
+bravia-cfgdst-ore-pro.bda.ndmdhs.com
+bravia.dl.playstation.net
+call.me.sel.sony.com
+facemap.foldlife.net
+flingo.tv
+preferences.cid.samba.tv
+sonybivstatic-a.akamaihd.net
+tvsideviewandroidv2-cfgdst-ore-pro.bda.ndmdhs.com
+
+# --- deliberately left unblocked (upstream notes) ---
+#applicast.ga.sony.net
+#portal.store.sonyentertainmentnetwork.com
+#reg.biv.sony.tv # https://github.com/notracking/hosts-blocklists/issues/384
+#service.biv.sony.tv # https://github.com/notracking/hosts-blocklists/issues/384
+#ssm1.internet.sony.tv # https://github.com/notracking/hosts-blocklists/issues/384
+#ssm2.internet.sony.tv # https://github.com/notracking/hosts-blocklists/issues/384
+#ssm3.internet.sony.tv # https://github.com/notracking/hosts-blocklists/issues/384
+#update.biv.sony.tv # required for updates
+#platform.cid.samba.tv #See Toshiba

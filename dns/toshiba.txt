@@ -1,0 +1,18 @@
+# toshiba: domains from Perflyst/PiHoleBlocklist SmartTV.txt (MIT). Generated, do not edit by hand.
+# Lines starting with '#<domain>' are NOT blocked on purpose: upstream reports they break apps,
+# updates or connectivity. Keep them commented.
+
+7345023508.fxm9485766783.com
+7345023508.fxmconnect.com
+androidtvchannels-pa.googleapis.com
+androidtvlauncherxfe-pa.googleapis.com
+androidtvwatsonfe-pa.googleapis.com
+data.mistat.intl.xiaomi.com
+events.cid.samba.tv
+mitv.tracking.intl.miui.com
+platform.cid.samba.tv
+sdkconfig.ad.intl.xiaomi.com
+tracking.intl.miui.com
+
+# --- deliberately left unblocked (upstream notes) ---
+#file2fxm.azureedge.net # https://oisd.nl/excludes.php?w=file2fxm.azureedge.net

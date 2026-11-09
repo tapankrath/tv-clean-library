@@ -1,0 +1,58 @@
+# panasonic: domains from Perflyst/PiHoleBlocklist SmartTV.txt (MIT). Generated, do not edit by hand.
+# Lines starting with '#<domain>' are NOT blocked on purpose: upstream reports they break apps,
+# updates or connectivity. Keep them commented.
+
+0077777700140002.myhomescreen.tv
+cert-test.sandbox.google.com
+collect-eu-fy2014.myhomescreen.tv
+collect-eu-fy2015.myhomescreen.tv
+collect-eu-fy2016.myhomescreen.tv
+collect-eu-fy2017.myhomescreen.tv
+collect-eu-fy2018.myhomescreen.tv
+collect-eu-fy2019.myhomescreen.tv
+collect-eu-fy2020.myhomescreen.tv
+collect-eu-fy2021.myhomescreen.tv
+collect-eu-fy2022.myhomescreen.tv
+collect-us-fy2014.myhomescreen.tv
+collect-us-fy2015.myhomescreen.tv
+collect-us-fy2016.myhomescreen.tv
+collect-us-fy2017.myhomescreen.tv
+collect-us-fy2018.myhomescreen.tv
+collect-us-fy2019.myhomescreen.tv
+collect-us-fy2020.myhomescreen.tv
+collect-us-fy2021.myhomescreen.tv
+collect-us-fy2022.myhomescreen.tv
+collect.myhomescreen.tv
+mhc-sec-eu.myhomescreen.tv
+mhc-sec-us.myhomescreen.tv
+usage-eu-fy2014.myhomescreen.tv
+usage-eu-fy2015.myhomescreen.tv
+usage-eu-fy2016.myhomescreen.tv
+usage-eu-fy2017.myhomescreen.tv
+usage-eu-fy2018.myhomescreen.tv
+usage-eu-fy2019.myhomescreen.tv
+usage-eu-fy2020.myhomescreen.tv
+usage-eu-fy2021.myhomescreen.tv
+usage-eu-fy2022.myhomescreen.tv
+usage-us-fy2014.myhomescreen.tv
+usage-us-fy2015.myhomescreen.tv
+usage-us-fy2016.myhomescreen.tv
+usage-us-fy2017.myhomescreen.tv
+usage-us-fy2018.myhomescreen.tv
+usage-us-fy2019.myhomescreen.tv
+usage-us-fy2020.myhomescreen.tv
+usage-us-fy2021.myhomescreen.tv
+usage-us-fy2022.myhomescreen.tv
+usage.myhomescreen.tv
+x2.vindicosuite.com
+
+# --- deliberately left unblocked (upstream notes) ---
+#mhc-ajax-eu.myhomescreen.tv # internet connection test
+#mhc-ajax-eu-s2.myhomescreen.tv # internet connection test
+#mhc-ajax-us.myhomescreen.tv # internet connection test
+#mhc-eu.myhomescreen.tv # required for internet connectivity
+#mhc-us.myhomescreen.tv # required for internet connectivity
+#mhc-xpana-eu.myhomescreen.tv # required to start apps
+#mhc-xpana-eu-s2.myhomescreen.tv # required to start apps
+#mhc-xpana-us.myhomescreen.tv # required to start apps
+#vcs.vdspf.com  //  if blocked, notified of new firmware but unable to download/install

@@ -1,0 +1,28 @@
+# hisense: domains from Perflyst/PiHoleBlocklist SmartTV.txt (MIT). Generated, do not edit by hand.
+# Lines starting with '#<domain>' are NOT blocked on purpose: upstream reports they break apps,
+# updates or connectivity. Keep them commented.
+
+_xmpp-client._tcp.managed.xmpp.foxtel.com.au
+a1.resources.foxtel.com.au
+api-gps-em.hismarttv.com
+api-gps-na.hismarttv.com
+api-launcher-em.hismarttv.com
+api-launcher-na.hismarttv.com
+api.eu.hismarttv.com
+api.euro.hismarttv.com
+api.us.hismarttv.com
+auth-em.hismarttv.com
+auth-launcher-em.hismarttv.com
+auth-launcher-na.hismarttv.com
+auth-na.hismarttv.com
+e2.resources.foxtel.com.au
+foxtel-prod-events.digitalsmiths.net
+managed.xmpp.foxtel.com.au
+msg-em.hismarttv.com
+msg-na.hismarttv.com
+unified-ter-na.hismarttv.com
+
+# --- deliberately left unblocked (upstream notes) ---
+#tuner-api.hdhomerun.com # required for firmware update
+#location-api.hdhomerun.com # required for firmware update
+#avpro.global.yamaha.com # Blocks system updates on RX-V685

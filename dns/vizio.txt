@@ -1,0 +1,75 @@
+# vizio: domains from Perflyst/PiHoleBlocklist SmartTV.txt (MIT). Generated, do not edit by hand.
+# Lines starting with '#<domain>' are NOT blocked on purpose: upstream reports they break apps,
+# updates or connectivity. Keep them commented.
+
+2mdn.net
+ad.71i.de
+adv.ettoday.net
+advertising.com
+alphonso.tv
+api.distribution.hulu.com
+api.thetake.com
+app.hbbtv.hse24.com
+cdn.hbbtv.smartclip.net
+cdn.smartclip.net
+control-zoo-dai-default.tvinteractive.tv
+control.tvinteractive.tv
+control2.tvinteractive.tv
+customerevents.netflix.com
+database01p.anixe.net
+de.ioam.de
+googleads.g.doubleclick.net
+hbbtv-1.eurosport.com
+hbbtv-extern-fe01.sim-technik.de
+hbbtv-track.redbutton.de
+hbbtv.3sat.de
+hbbtv.kabeleins.de
+hbbtv.qvc.de
+hbbtv.rtl2.de
+hbbtv.sat1.de
+hbbtv.sixx.de
+hbbtv.superrtl.de
+hbbtv01p.anixe.net
+hbbtvapp.sonnenklar.tv
+hse-ctv.com
+hse24.tvtelemetrie.de
+ichnaea.netflix.com
+mcp.tvinteractive.tv
+nbc-jite.nbcuni.com
+p-hbbtv.superrtl.de
+redbutton-adproxy-lb-prod.redbutton.de
+redbutton-lb-prod.redbutton.de
+redbutton.sim-technik.de
+scheduler.hbbtv.smartclip.net
+script.ioam.de
+start.digitaltext.rtl.de
+stats-irl.sxp.smartclip.net
+stats.hbbtv.smartclip.net
+trvdp.com
+tv-static.scdn.co
+tv.ads.spotx.tv
+tvmeta-dynamic.tvinteractive.tv
+xml.opera.com
+
+# --- deliberately left unblocked (upstream notes) ---
+#api.vizio.com
+#images.vizio.com
+#announcements.vizio.com # No reason to block this
+#hbbtv.prosieben.de # Blocks ProSieben apps from starting.
+#hbbtv.redbutton.de # Blocks ZDF & ProSieben apps from starting.
+#hbbtv.zdf.de # Blocks ZDF apps from starting.
+#api.nfl.com # required for NFL Fantasy Football App
+#apicache.vudu.com # needed for Vudu's app, see issue22
+#cdns-content.dzcdn.net # https://oisd.nl/excludes.php?w=cdns-content.dzcdn.net
+#drscdn.500px.org # blocks 500px on desktop
+#geo.opera.com # blocks opera update
+#itv.ard.de # ARD media lib - HBBTV
+#tv.deezer.com # Breaks Deezer's smart-TV apps.
+#secure.netflix.com
+#api-global.netflix.com
+#appboot.netflix.com
+#nrdp.nccp.netflix.com # Netflix playback fails on Humax DTR-T2100 (YouView) STB
+#nrdp.prod.ftl.netflix.com  # https://oisd.nl/excludes.php?w=nrdp.prod.ftl.netflix.com
+#api-tv.spotify.com # required for TV and PS4 spotify app
+# time-a.timefreq.bldrdoc.gov          # probably not a good idea to block this one
+# api.accuweather.com                  # probably not a good idea to block this one

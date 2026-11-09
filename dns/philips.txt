@@ -1,0 +1,12 @@
+# philips: domains from Perflyst/PiHoleBlocklist SmartTV.txt (MIT). Generated, do not edit by hand.
+# Lines starting with '#<domain>' are NOT blocked on purpose: upstream reports they break apps,
+# updates or connectivity. Keep them commented.
+
+ad.nettvservices.com
+legacyportal.nettvservices.com
+nettv.corio.com
+
+# --- deliberately left unblocked (upstream notes) ---
+#deviceportal.nettvservices.com # needed for apps
+#epg.corio.com # needed for apps
+#www.ecdinterface.philips.com # Philips Hue Bridge

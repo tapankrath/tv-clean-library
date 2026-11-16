@@ -14,7 +14,6 @@ com.google.android.tungsten.setupwraith                 # 5/16 setup wizard; own
 com.google.android.tvrecommendations                    # 5/16 recommendation rows of the stock launcher
 com.hisense.business.ad                                 # 5/16 ad SDK
 com.hisense.logupload                                   # 5/16 log uploader
-com.hisense.platformreport                              # 5/16 usage/telemetry reporting
 com.hisense.service.ad                                  # 5/16 ad service
 com.google.android.tv.bugreportsender                   # 4/16
 com.google.android.videos                               # 4/16 Google Play Movies & TV (also a TvInputService for previews)
@@ -22,11 +21,10 @@ com.hisense.demonstrate                                 # 4/16 DbxDemo / multi-c
 com.hisense.electronictutorial                          # 4/16 e-manual
 com.hisense.hitv.das                                    # 4/16 DasApp: DataReportReceiver only
 com.hisense.hotelmenu                                   # 4/16 hotel mode menu
+com.hisense.platformreport                              # 4/16 usage/telemetry reporting
 com.hisense.storemode                                   # 4/16 retail store demo mode
-com.hisense.tv.fitmirror                                # 4/16 fitness mirror
 com.hisense.tv.videochat.social                         # 4/16 preloaded video chat
 com.hisense.tv.videoconference                          # 4/16 video conferencing
-com.hisense.tv.weather                                  # 4/16 weather card, another content feed
 com.jamdeo.calendar                                     # 4/16 vendor calendar, not the AOSP one
 com.jamdeo.tv.fte                                       # 4/16 first-run wizard, already done; Wi-Fi belongs to android.uid.system
 com.mstar.android.tv.disclaimercustomization            # 4/16 store disclaimer screen
@@ -38,7 +36,9 @@ com.google.android.youtube.tvmusic                      # 3/16 YouTube Music
 com.hisense.ar.baike                                    # 3/16 AR encyclopedia
 com.hisense.evservice                                   # 3/16 ACR collector (/system/priv-app/acr), watches HDMI too
 com.hisense.tv.b2b                                      # 3/16 HisenseB2B hotel/business mode
+com.hisense.tv.fitmirror                                # 3/16 fitness mirror
 com.hisense.tv.foodmanage                               # 3/16 recipe app
+com.hisense.tv.weather                                  # 3/16 weather card, another content feed
 com.vision.aibook                                       # 3/16 AI picture book
 com.vt.fte                                              # 3/16 first-time setup hooks for the setup wizard
 com.vt.hishow                                           # 3/16 "Family Moment" screensaver and photo content
@@ -68,7 +68,6 @@ com.amazon.ods.kindleconnect                            # 2/16 "show on Fire TV"
 com.amazon.perfc                                        # 2/16 performance telemetry
 com.amazon.perfcollection                               # 2/16 performance telemetry
 com.amazon.privacypassservice                           # 2/16 privacy pass token service
-com.amazon.providers.contentsupport                     # 2/16 content support provider
 com.amazon.rtcsessioncontroller                         # 2/16 Alexa calling / Drop In
 com.amazon.shoptv.client                                # 2/16 Shop on Fire TV
 com.amazon.sneakpeek                                    # 2/16 autoplaying previews on Home

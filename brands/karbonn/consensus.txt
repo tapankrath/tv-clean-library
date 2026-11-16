@@ -4,17 +4,23 @@
 # Higher count = more sets survived it. Still apply in batches and check after each reboot.
 # Format: <package>  # <count>/<lists> <most common note>
 
+android.autoinstalls.config.SW                          # 1/1 Play auto-install config for partner apps
 com.Smartdevice.emanual                                 # 1/1 on-screen manual
+com.android.dreams.basic                                # 1/1 stock "colours" screensaver; ClockDream replaces it
+com.android.printspooler                                # 1/1 printing
 com.community.newroom                                   # 1/1 Community Newroom
 com.community.oneroom                                   # 1/1 Community OneRoom
 com.facebook.katana                                     # 1/1 Facebook
 com.google.android.backdrop                             # 1/1
 com.google.android.feedback                             # 1/1
+com.google.android.leanbacklauncher.partnercustomizer   # 1/1 sponsored partner channels on the stock home
+com.google.android.partnersetup                         # 1/1 partner-app attribution
 com.google.android.play.games                           # 1/1 Google Play Games
 com.google.android.tv.bugreportsender                   # 1/1
 com.google.android.tvrecommendations                    # 1/1 on Unit 2 it also caused 2 s freezes every 32 s (see header)
 com.internet.tvbrowser                                  # 1/1 generic TV browser
 com.mstar.android.tv.disclaimercustomization            # 1/1 manufacturer branding/disclaimer screen
+com.mstar.netflixobserver                               # 1/1 Netflix measurement service; the Netflix app is untouched
 com.qjy.browser                                         # 1/1 unknown browser
 com.smartdevice.acr.recommendation                      # 1/1 ACR — listens to ambient audio for ad targeting
 com.smartdevice.epopplayer                              # 1/1 ePop shop demo player

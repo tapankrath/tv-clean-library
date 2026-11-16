@@ -767,19 +767,30 @@
   "tv": "BenQ E55-750 (Changhong AI PONT, DVB96BQ)",
   "method": "adb-disable",
   "lists": [
+   "models/android-tv/benq-e55-750/debloat-impex-4k.txt",
    "models/android-tv/benq-e55-750/debloat.txt"
   ],
-  "package_count": 8,
-  "notes": "Homwee store/help, Google TV recommendations and ambient mode; no ACR on this firmware; setupwraith, screensaver handover",
+  "package_count": 11,
+  "notes": "Homwee store/help, Google TV recommendations and ambient mode; no ACR on this firmware; setupwraith, screensaver handover; the folder carries a second list for the Impex 4K (India, DVB96IP, Android 11), `debloat-impex-4k.txt`",
   "match_tokens": [
+   "001",
    "136",
+   "184",
+   "230903",
    "240401",
+   "260506",
+   "3794",
    "benq-e55-750",
+   "debloat-impex-4k",
+   "dvb96",
    "dvb96bq",
-   "e55-735",
+   "dvb96ip",
    "e55-750",
    "m7632",
-   "rtm8"
+   "rtm7",
+   "rtm8",
+   "tuvio-td43ufbcv5",
+   "tuvio-tm55ufbcv5"
   ],
   "status": "tested-by-submitter",
   "source": "https://github.com/Gathin23/cleanyourtv/tree/main/examples/benq-e55-750"
@@ -962,6 +973,29 @@
   ],
   "status": "tested-by-submitter",
   "source": "https://github.com/Gathin23/cleanyourtv/tree/main/examples/byintek-u4"
+ },
+ {
+  "id": "candy-android-tv-dvb",
+  "brand": "Haier",
+  "brand_slug": "haier",
+  "platform": "android-tv",
+  "os": "Android TV 14",
+  "tv": "CANDY Android TV DVB (Haier, MediaTek m7332)",
+  "method": "adb-disable",
+  "lists": [
+   "models/android-tv/candy-android-tv-dvb/debloat.txt"
+  ],
+  "package_count": 16,
+  "notes": "Anoki ACR, retail demo, Haier content apps and auto-install, and a Haier app manager that re-enables apps at boot; 1.4 GB; [notes](candy-android-tv-dvb/README.md)",
+  "match_tokens": [
+   "001",
+   "2026",
+   "260408",
+   "haier-android-tv-dvb2k",
+   "m7332"
+  ],
+  "status": "tested-by-submitter",
+  "source": "https://github.com/Gathin23/cleanyourtv/tree/main/examples/candy-android-tv-dvb"
  },
  {
   "id": "caxium-58-realtek-rtk2851p",
@@ -1181,6 +1215,31 @@
   "source": "https://github.com/Gathin23/cleanyourtv/tree/main/examples/compac-atv-r2"
  },
  {
+  "id": "continental-edison-celed50sav222b6",
+  "brand": "Continental Edison",
+  "brand_slug": "continental-edison",
+  "platform": "android-tv",
+  "os": "Android TV 14",
+  "tv": "Continental Edison CELED50SAV222B6 (Expressluck guandu, MediaTek m7632), France",
+  "method": "adb-disable",
+  "lists": [
+   "models/android-tv/continental-edison-celed50sav222b6/debloat.txt"
+  ],
+  "package_count": 14,
+  "notes": "Anoki ACR, Android 14 ad/personalisation/federated services, feedback, partner rows, retail demo, e-manual; stock HOME is `tvlauncher`; setupwraith does not claim Home and stays on; Chromecast, phone remote, USB player and Live TV kept; voice off by choice, left commented out",
+  "match_tokens": [
+   "001",
+   "1920x1080",
+   "2026-11-05",
+   "260425",
+   "celed50sav222b6",
+   "continental-edison-celed50sav222b6",
+   "m7632"
+  ],
+  "status": "tested-by-submitter",
+  "source": "https://github.com/Gathin23/cleanyourtv/tree/main/examples/continental-edison-celed50sav222b6"
+ },
+ {
   "id": "coocaa-k3-pro-90p3d-max",
   "brand": "Skyworth",
   "brand_slug": "skyworth",
@@ -1231,6 +1290,29 @@
   "source": "https://github.com/Gathin23/cleanyourtv/tree/main/examples/coocaa-p9-projector"
  },
  {
+  "id": "daewoo-50dm62ua-finch",
+  "brand": "Daewoo",
+  "brand_slug": "daewoo",
+  "platform": "android-tv",
+  "os": "Android TV 14",
+  "tv": "Daewoo 50DM62UA (Vestel finch)",
+  "method": "adb-disable",
+  "lists": [
+   "models/android-tv/daewoo-50dm62ua-finch/debloat.txt"
+  ],
+  "package_count": 22,
+  "notes": "Vestel telemetry, SpeedUp, eIB manual; Google ad services disabled; TDT LiveTV kept: [list](daewoo-50dm62ua-finch/debloat.txt)",
+  "match_tokens": [
+   "001",
+   "260428",
+   "50dm62ua",
+   "daewoo-50dm62ua-finch",
+   "m7332"
+  ],
+  "status": "tested-by-submitter",
+  "source": "https://github.com/Gathin23/cleanyourtv/tree/main/examples/daewoo-50dm62ua-finch"
+ },
+ {
   "id": "dcolor-gd2",
   "brand": "Dcolor",
   "brand_slug": "dcolor",
@@ -1254,6 +1336,37 @@
   ],
   "status": "tested-by-submitter",
   "source": "https://github.com/Gathin23/cleanyourtv/tree/main/examples/dcolor-gd2"
+ },
+ {
+  "id": "dexp-65uhg2",
+  "brand": "DEXP",
+  "brand_slug": "dexp",
+  "platform": "android-tv",
+  "os": "Google TV 14",
+  "tv": "DEXP 65UHG2 (HKC 4K PA Google TV, HKC_4K_GTV_PA, lakeside)",
+  "method": "adb-disable",
+  "lists": [
+   "models/android-tv/dexp-65uhg2/debloat.txt"
+  ],
+  "package_count": 16,
+  "notes": "HKC-built Google TV 14 on MediaTek m7332: retail demo, CVTE and MediaTek factory menus, hotel mode, Anoki ACR, help and feedback off; `com.google.android.tungsten.setupwraith` disabled with the stock home (its RecoveryActivity takes Home at priority 1); MediaTek partner customizer left alone; the gear button needs the key helper (HOME_KEY_SERVICE=1, keycode 83, scancode 249), which costs the volume ramp; Settings pill",
+  "match_tokens": [
+   "001",
+   "1902044",
+   "1920x1080",
+   "2026-07-04",
+   "260704",
+   "320",
+   "3840x2160",
+   "65uhg2",
+   "anker-nebula-mars-3-air",
+   "dexp-65uhg2",
+   "durabrand-durat32isdb",
+   "hkc_4k_gtv_pa",
+   "m7332"
+  ],
+  "status": "tested-by-submitter",
+  "source": "https://github.com/Gathin23/cleanyourtv/tree/main/examples/dexp-65uhg2"
  },
  {
   "id": "dexp-a651",
@@ -1401,6 +1514,31 @@
   ],
   "status": "tested-by-submitter",
   "source": "https://github.com/Gathin23/cleanyourtv/tree/main/examples/eko-4k-bangbae"
+ },
+ {
+  "id": "engy-ai-pont",
+  "brand": "ENGY",
+  "brand_slug": "engy",
+  "platform": "android-tv",
+  "os": "Google TV 14",
+  "tv": "ENGY AI PONT (DVB64; Changhong build, set reports CHiQ, device alimos)",
+  "method": "adb-disable",
+  "lists": [
+   "models/android-tv/engy-ai-pont/debloat.txt"
+  ],
+  "package_count": 11,
+  "notes": "Changhong AI PONT platform, sibling of the RCA, Aiwa and CHiQ sets; Homwee store and help, Anoki ACR, Play Games, karaoke, the SABA downloader and setupwraith off; firmware updates, screen mirroring, Assistant, Chromecast, Live TV and the input menu kept",
+  "match_tokens": [
+   "094",
+   "2026-11-10",
+   "260116",
+   "dvb64",
+   "dvb93cq",
+   "mt5896",
+   "ukn6"
+  ],
+  "status": "tested-by-submitter",
+  "source": "https://github.com/Gathin23/cleanyourtv/tree/main/examples/engy-ai-pont"
  },
  {
   "id": "epson-ls800",
@@ -2093,28 +2231,30 @@
   "brand_slug": "hisense",
   "platform": "android-tv",
   "os": "Android 9",
-  "tv": "Hisense 65E5H (VIDAA_TV, MediaTek MT9652, hisense_m7642_cn), China",
+  "tv": "Hisense 65E5H / 85U7G PRO (VIDAA_TV, MediaTek MT9652, hisense_m7642_cn), China",
   "method": "adb-disable",
   "lists": [
+   "models/android-tv/hisense-65e5h/debloat-85u7g-pro.txt",
    "models/android-tv/hisense-65e5h/debloat.txt"
   ],
-  "package_count": 29,
-  "notes": "China JuUI 9 on Android 9 (PPR2.180905.006.A1 / 02.02.60.01): ad SDK/service, telemetry, vendor push channel, store/hotel/demo and tutorial apps, preloaded content, the vendor screensaver, AI photo recognition, family album/cloud/message board, single listen and the voice chat room; debloat only, stock Home `com.jamdeo.tv.vod` and Live TV `com.jamdeo.tv.livetv` kept, OTA kept; 29 packages; `ro.adb.secure=1`, so the TV asks for the ADB key once, and states can be lost if you reboot right after disabling - wait a minute; [device notes](hisense-65e5h/README.md)",
+  "package_count": 26,
+  "notes": "China JuUI 9 on Android 9 (PPR2.180905.006.A1 / 02.02.60.01): ad SDK/service, telemetry, vendor push channel, store/hotel/demo and tutorial apps, preloaded content, the vendor screensaver, AI photo recognition, family album/cloud/message board, single listen and the voice chat room; debloat only, stock Home `com.jamdeo.tv.vod` and Live TV `com.jamdeo.tv.livetv` kept, OTA kept; 29 packages; `ro.adb.secure=1`, so the TV asks for the ADB key once, and states can be lost if you reboot right after disabling - wait a minute; 85U7G PRO is the same board and build and ships [its own list](hisense-65e5h/debloat-85u7g-pro.txt); [device notes](hisense-65e5h/README.md)",
   "match_tokens": [
    "006",
-   "126",
+   "127",
    "180905",
-   "1920x1080",
-   "320",
    "5555",
    "65e5h",
+   "85u7g",
    "armeabi-v7a",
+   "debloat-85u7g-pro",
    "hisense-65e5h",
    "hisense_m7642_cn",
    "m7642",
    "mt9652",
    "mtk9652",
-   "ppr2"
+   "ppr2",
+   "u7g_pro-user"
   ],
   "status": "tested-by-submitter",
   "source": "https://github.com/Gathin23/cleanyourtv/tree/main/examples/hisense-65e5h"
@@ -2211,7 +2351,7 @@
   "lists": [
    "models/fire-os/hisense-fire-tv-55qd6qf/debloat.txt"
   ],
-  "package_count": 52,
+  "package_count": 51,
   "notes": "Fire OS 8.1 TV: Amazon telemetry, ACR, ad/recommendation feeders, advertising ID, Shopping, Channels, tutorials; Amazon preloads, Miracast and Alexa off by choice (vizzini returns at every boot); retailer apps re-enable at boot (remove them in Settings > Applications); Wi-Fi owned by oobe; input switching, the Home key and the homekey broadcast reserved to Amazon; AirPlay, Live TV, Silk, OTA kept; debloat only",
   "match_tokens": [
    "3746n",
@@ -2475,14 +2615,15 @@
   "brand_slug": "hisense",
   "platform": "android-tv",
   "os": "Google TV 12",
-  "tv": "Hisense U75 / 75U75N / 65U7ESG (hengshan, MediaTek), Latin America and US",
+  "tv": "Hisense U75 / 75U75N / 65U7ESG / 65U86LUA (hengshan, MediaTek), Latin America and US",
   "method": "adb-disable",
   "lists": [
    "models/android-tv/hisense-u75-hengshan/debloat-65u7esg.txt",
+   "models/android-tv/hisense-u75-hengshan/debloat-65u86lua.txt",
    "models/android-tv/hisense-u75-hengshan/debloat.txt"
   ],
   "package_count": 29,
-  "notes": "Vtp_ACR content recognition, VIDAA Channels Plus + content tab, Family Moment, store/hotel/factory, DeviceAssistant cleaner, Ginga broadcast middleware, Google PAI auto-installs; OTA, casting and all streaming apps kept by choice; smartsense/AIoT family must stay (Recovery risk); 75U75N (US) second unit: remote button codes, a dock `config.json`, and why a key helper costs the volume ramp with or without a CEC soundbar; 65U7ESG (Colombia) fourth unit: its own list (`debloat-65u7esg.txt`), and launcherx left on behind `stock_home_redirect` with `key_filter` off keeps both the app buttons and the volume ramp",
+  "notes": "Vtp_ACR content recognition, VIDAA Channels Plus + content tab, Family Moment, store/hotel/factory, DeviceAssistant cleaner, Ginga broadcast middleware, Google PAI auto-installs; OTA, casting and all streaming apps kept by choice; smartsense/AIoT family must stay (Recovery risk); 75U75N (US) second unit: remote button codes, a dock `config.json`, and why a key helper costs the volume ramp with or without a CEC soundbar; 65U7ESG (Colombia) fourth unit: its own list (`debloat-65u7esg.txt`), and launcherx left on behind `stock_home_redirect` with `key_filter` off keeps both the app buttons and the volume ramp; 65U86LUA (US) fifth unit: its own list (`debloat-65u86lua.txt`) with Google TV's home screen kept and the Hisense tab removed, and how its motion smoothing and ARC audio format were read from the log",
   "match_tokens": [
    "002",
    "135",
@@ -2490,6 +2631,7 @@
    "2026-10-25",
    "230310",
    "65u7esg",
+   "65u86lua",
    "75u75n",
    "debloat-65u7esg",
    "his9618",
@@ -2741,6 +2883,33 @@
   ],
   "status": "tested-by-submitter",
   "source": "https://github.com/Gathin23/cleanyourtv/tree/main/examples/inclo-google-tv-4k"
+ },
+ {
+  "id": "indurama-google-tv-4k-ktc-hongkong",
+  "brand": "Indurama",
+  "brand_slug": "indurama",
+  "platform": "android-tv",
+  "os": "Google TV 14",
+  "tv": "Indurama Google TV 4K (KTC hongkong, ISDB)",
+  "method": "adb-disable",
+  "lists": [
+   "models/android-tv/indurama-google-tv-4k-ktc-hongkong/debloat.txt"
+  ],
+  "package_count": 40,
+  "notes": "Same `hongkong` MediaTek board as `ktc-4k-smart-tv-hongkong/`, sold in Ecuador with LatAm preloads: Anoki ACR, Google feedback/partner/consent telemetry, Privacy Sandbox and on-device personalisation off; four KTC/MediaTek factory-menu and production packages off (never launched, only dumpsys-inspected); e-manual, retail demo, MStar disclaimer, MediaTek setup wizard and VendorWebView, esaba.downloader disabled; `com.netflix.ninja`, `com.wbd.stream` and `com.eltelon.zapping` kept (owner-tested as disabled, commented out for each owner); `com.android.mgstv` (Xuper/Magis TV) and Mercado Play kept; `com.mediatek.wwtv.tvcenter` kept (ISDB tuner); owner added the CleanYourTV launcher with `com.android.mgstv` on the remote's Netflix key (keycode 265) and the Settings key on keycode 80; reboot-checked",
+  "match_tokens": [
+   "001",
+   "15607783",
+   "260610",
+   "260626",
+   "flar2",
+   "indurama-google-tv-4k-ktc-hongkong",
+   "ktc-4k-smart-tv-hongkong",
+   "ktc_4k_isdb_22gv1",
+   "m7632"
+  ],
+  "status": "tested-by-submitter",
+  "source": "https://github.com/Gathin23/cleanyourtv/tree/main/examples/indurama-google-tv-4k-ktc-hongkong"
  },
  {
   "id": "insignia-ns42f201na22",
@@ -3115,17 +3284,20 @@
   "brand_slug": "karbonn",
   "platform": "android-tv",
   "os": "Android TV 10",
-  "tv": "Karbonn / Motorola SWTV-20AE (Skyworth OEM, SW4H, MediaTek), India",
+  "tv": "Karbonn / Motorola / Thomson SWTV-20AE (Skyworth OEM, SW4H, MediaTek), India",
   "method": "adb-disable",
   "lists": [
    "models/android-tv/karbonn-swtv-20ae/debloat.txt"
   ],
-  "package_count": 19,
-  "notes": "Same SW4H platform as Panasonic 4KTV-0SU, also sold as Motorola SWTV-20AE (same build); Skyworth ACR, ad-row injector, ePop demo, e-manual, Airtel Xstream, Facebook and India-specific preloads; Google feedback and recommendation rows; 1.68 GB RAM, 32-bit armeabi-v7a; com.sky.market is a protected package (SecurityException); animation scales halved + background_process_limit 2 for extra performance on low RAM; Live TV is com.smartdevice.livetv; tvrecommendations caused 2 s system freezes (D-pad runaway) on the Motorola unit; firmware resets the screensaver at boot",
+  "package_count": 25,
+  "notes": "Same SW4H platform as Panasonic 4KTV-0SU, also sold as Motorola SWTV-20AE and as the Thomson 43OATHPRO2000 by Super Plastronics (same build); Skyworth ACR, ad-row injector, ePop demo, e-manual, Airtel Xstream, Facebook and India-specific preloads; Google feedback and recommendation rows; 1.68 GB RAM, 32-bit armeabi-v7a; com.sky.market is a protected package (SecurityException); animation scales halved + background_process_limit 2 for extra performance on low RAM; Live TV is com.smartdevice.livetv; tvrecommendations caused 2 s system freezes (D-pad runaway) on the Motorola unit; firmware resets the screensaver at boot",
   "match_tokens": [
    "002",
    "200617",
    "2022-04-05",
+   "2023-02-05",
+   "43oathpro2000",
+   "43q20",
    "armeabi-v7a",
    "karbonn-swtv-20ae",
    "m7332",
@@ -3497,6 +3669,33 @@
   "source": "https://github.com/Gathin23/cleanyourtv/tree/main/examples/master-g-2k-atv-martin"
  },
  {
+  "id": "master-g-2k-smart-tv-jordanfarias",
+  "brand": "Master-G",
+  "brand_slug": "master-g",
+  "platform": "android-tv",
+  "os": "Google TV (Android 14, SDK 34)",
+  "tv": "Master-G 2K Smart TV (KTC mountbaker, KTC_MASTER_G_2K_SA_22GV1), Chile",
+  "method": "adb-disable",
+  "lists": [
+   "models/android-tv/master-g-2k-smart-tv-jordanfarias/debloat.txt"
+  ],
+  "package_count": 8,
+  "notes": "Contributed by JordanFarias. Realtek rtd2841a board (fingerprint MASTER-G/KTC_MASTER_G_2K_SA_22GV1/mountbaker:14/UKR9.250818.041/14285169:user/release-keys). Disabled stock launcherx, setupwraith, Android 14 ad/ML services, electronic manual, Play Games and YouTube Music. Clock screensaver configured via com.gathin.tvhome/.ClockDream with sleep_timeout=0.",
+  "match_tokens": [
+   "041",
+   "14285169",
+   "22gv1",
+   "250818",
+   "ktc_master_g_2k_sa_22gv1",
+   "master-g-2k-smart-tv-jordanfarias",
+   "ps1",
+   "rtd2841a",
+   "ukr9"
+  ],
+  "status": "tested-by-submitter",
+  "source": "https://github.com/Gathin23/cleanyourtv/tree/main/examples/master-g-2k-smart-tv-jordanfarias"
+ },
+ {
   "id": "master-g-mga3200",
   "brand": "Master-G",
   "brand_slug": "master-g",
@@ -3548,6 +3747,37 @@
   ],
   "status": "tested-by-submitter",
   "source": "https://github.com/Gathin23/cleanyourtv/tree/main/examples/mecool-km2-plus"
+ },
+ {
+  "id": "metz-43mub8000",
+  "brand": "Metz",
+  "brand_slug": "metz",
+  "platform": "android-tv",
+  "os": "Android TV 9",
+  "tv": "Metz 43MUB8000 (Skyworth SW3H_ATV, MediaTek MT5886), Europe",
+  "method": "adb-disable",
+  "lists": [
+   "models/android-tv/metz-43mub8000/debloat.txt"
+  ],
+  "package_count": 15,
+  "notes": "Same firmware build as the Kodak 55CA0909: Google feedback, retail demo, e-manual, Backdrop and partner auto-install/Leanback hooks; streaming apps, Assistant, Play apps and TTS off by choice; Chromecast and USB player kept; no network debugging toggle, opened over a USB-C to USB-A cable; clock stuck at 2000 until automatic time was toggled; ~1.6 GB; reboot-checked same day",
+  "match_tokens": [
+   "001",
+   "181130",
+   "2019-10-05",
+   "2026-11-09",
+   "32-bit",
+   "43mub8000",
+   "kodak-55ca0909",
+   "metz-43mub8000",
+   "mt5886",
+   "ptt1",
+   "sw3_atv",
+   "sw3h",
+   "sw3h_atv_g"
+  ],
+  "status": "tested-by-submitter",
+  "source": "https://github.com/Gathin23/cleanyourtv/tree/main/examples/metz-43mub8000"
  },
  {
   "id": "motorola-mt4310",
@@ -3879,6 +4109,41 @@
   "source": "https://github.com/Gathin23/cleanyourtv/tree/main/examples/nokia-streaming-box-8010"
  },
  {
+  "id": "nonete-portable-projector-h726",
+  "brand": "Nonete",
+  "brand_slug": "nonete",
+  "platform": "android-tv",
+  "os": "Android 14",
+  "tv": "Nonete portable projector (Allwinner H726, h726_p2, reports ADT-3), 1 GB, 720p",
+  "method": "adb-disable",
+  "lists": [
+   "models/android-tv/nonete-portable-projector-h726/debloat.txt"
+  ],
+  "package_count": 9,
+  "notes": "First Nonete list and the HTC-launcher firmware on the H726 board: factory test, Office, HTC store, screensavers and the four cast receivers off (9 packages); firmware updaters, HDMI (`com.softwinner.vis`), autofocus (`com.hysd.vafocus`) and the power menu (`com.htc.closedialog`) kept; a second group applied 2026-11-12 is commented until lived with, the cast hub `com.android.toofifi` among them (seven LAN ports close with it off); Settings needs a `settings_fallback_components` entry and the phone Netflix a `library_apps` entry, both in the list header",
+  "match_tokens": [
+   "123926",
+   "1280x720",
+   "2026-11-08",
+   "2026-11-12",
+   "240",
+   "32-bit",
+   "720p",
+   "adt-3",
+   "adt3",
+   "b0dx78nkrl",
+   "h726",
+   "h726_p2",
+   "htclauncherhighenglishd08",
+   "lyncast-x3aq",
+   "nonete-portable-projector-h726",
+   "projector_20250902",
+   "sun50iw15p1"
+  ],
+  "status": "tested-by-submitter",
+  "source": "https://github.com/Gathin23/cleanyourtv/tree/main/examples/nonete-portable-projector-h726"
+ },
+ {
   "id": "nvidia-shield-tv-2017",
   "brand": "NVIDIA Shield",
   "brand_slug": "nvidia",
@@ -4197,7 +4462,7 @@
    "models/android-tv/oppo-k9-55-oppocnm632/debloat.txt"
   ],
   "package_count": 27,
-  "notes": "HeyTap cast and paid screen-share, ads, pictorial, push, telemetry, crash upload and factory menus; optional extra list turns off gallery, weather, voice, karaoke and similar by choice; stock home `com.heytap.tv.launcher` stays enabled ([device note](../docs/devices/oppo-k9-55-oppocnm632.md))",
+  "notes": "HeyTap cast and paid screen-share, ads, pictorial, push, telemetry, crash upload and factory menus; the optional `debloat-extra.txt` turns off gallery, weather, voice, karaoke and similar by choice; stock home `com.heytap.tv.launcher` stays enabled ([device note](../docs/devices/oppo-k9-55-oppocnm632.md))",
   "match_tokens": [
    "oppo-k9-55-oppocnm632",
    "oppocnm632"
@@ -4323,6 +4588,35 @@
   "source": "https://github.com/Gathin23/cleanyourtv/tree/main/examples/panasonic-4ktv-jup"
  },
  {
+  "id": "panasonic-atv-r2",
+  "brand": "Panasonic",
+  "brand_slug": "panasonic",
+  "platform": "android-tv",
+  "os": "Android TV 11",
+  "tv": "Panasonic ATV R2 (SCBC R2, Realtek RTD285O)",
+  "method": "adb-disable",
+  "lists": [
+   "models/android-tv/panasonic-atv-r2/debloat.txt"
+  ],
+  "package_count": 16,
+  "notes": "Same Android 11 SCBC R2 build as the Nokia ATV R2: recommendation rows, E-SHOW, E-Sticker, S-Channel ad rows, partner auto-installs, the SCBC consent agent, Ambient mode, Play Movies, Play Games, YouTube Music, TalkBack, Meet; Assistant, Chromecast and FastCast off by choice; firmware updaters and the Realtek inputs and remote helpers stay on; setupwraith owns a saved Wi-Fi network. The firmware reopens the last input at power-on, so the launcher's power_on_home was used, and its Home-button helper made a held volume key step once",
+  "match_tokens": [
+   "001",
+   "1050",
+   "1067",
+   "1920x1080",
+   "2026-11-06",
+   "2026-11-10",
+   "220308",
+   "nokia-atv-r2",
+   "panasonic-atv-r2",
+   "rtd285o",
+   "rtt7"
+  ],
+  "status": "tested-by-submitter",
+  "source": "https://github.com/Gathin23/cleanyourtv/tree/main/examples/panasonic-atv-r2"
+ },
+ {
   "id": "panasonic-gs655",
   "brand": "Panasonic",
   "brand_slug": "panasonic",
@@ -4359,12 +4653,13 @@
   "lists": [
    "models/android-tv/panasonic-kowloon/debloat.txt"
   ],
-  "package_count": 11,
-  "notes": "Streaming and music apps off, tested on this set: Netflix `com.netflix.ninja` disabled, Prime Video `com.amazon.amazonvideo.livingroom` disabled, Disney+ `com.disney.disneyplus` disabled, Viaplay `com.viaplay.android` disabled, YouTube Music `com.google.android.youtube.tvmusic` disabled, Play Games `com.google.android.play.games` disabled; a second unit (Spain, UKNV.260729.001) adds Android ad services, Google feedback, the Vestel reporter, the retail demo, the satellite wizard and TalkBack; setupwraith owns the saved Wi-Fi and is not listed (the wired second unit has it off); Assistant, Chromecast and updates kept",
+  "package_count": 26,
+  "notes": "Streaming and music apps off, tested on this set: Netflix `com.netflix.ninja` disabled, Prime Video `com.amazon.amazonvideo.livingroom` disabled, Disney+ `com.disney.disneyplus` disabled, Viaplay `com.viaplay.android` disabled, YouTube Music `com.google.android.youtube.tvmusic` disabled, Play Games `com.google.android.play.games` disabled; a second unit (Spain, UKNV.260729.001) adds Android ad services, Google feedback, the Vestel reporter, the retail demo, the satellite wizard and TalkBack; setupwraith owns the saved Wi-Fi and is not listed (the wired second unit has it off); Assistant, Chromecast and updates kept; a third unit (Spain, same build, streaming apps in daily use) adds the report-consent screen, partner setup and federated learning, the setup and backup leftovers, the calendar provider and sync, the basic screensaver, Google TV movies, HBO Max, the e-manual and the Vewd browser, off since 24 Oct 2026 with nothing broken",
   "match_tokens": [
    "001",
    "1920x1080",
    "2026",
+   "2026-11-10",
    "260416",
    "260729"
   ],
@@ -4453,13 +4748,13 @@
   "brand_slug": "philco",
   "platform": "android-tv",
   "os": "Android TV 14",
-  "tv": "Philco Smart TV (Skyworth-built, sunnyvale, MediaTek), Brazil",
+  "tv": "Philco Smart TV (Skyworth-built, sunnyvale, MediaTek; also sold as the Britania Smart TV), Brazil",
   "method": "adb-disable",
   "lists": [
    "models/android-tv/philco-smart-tv-sunnyvale/debloat.txt"
   ],
   "package_count": 12,
-  "notes": "Skyworth shop demos, home-row customizer, DailyPlay recommendations and Play partner auto-installs; Google feedback and Android ad services; FAST channels, Assistant, Play Games and ambient mode off by choice (commented out); Live TV opens at every power-on, power_on_home brings Home back; port 5555 opens with USB debugging alone; reboot-checked; 0.9 GB",
+  "notes": "Skyworth shop demos, home-row customizer, DailyPlay recommendations and Play partner auto-installs; Google feedback and Android ad services; FAST channels, Assistant, Play Games and ambient mode off by choice (commented out); Live TV opens at every power-on, power_on_home brings Home back; port 5555 opens with USB debugging alone; reboot-checked on a Philco and a Britania unit; a held Volume Up still repeats with the Home key helper on; 0.9 GB",
   "match_tokens": [
    "001",
    "1280x720",
@@ -4472,6 +4767,40 @@
   ],
   "status": "tested-by-submitter",
   "source": "https://github.com/Gathin23/cleanyourtv/tree/main/examples/philco-smart-tv-sunnyvale"
+ },
+ {
+  "id": "philips-32pfs6402",
+  "brand": "Philips",
+  "brand_slug": "philips",
+  "platform": "android-tv",
+  "os": "Android TV 7.1.2",
+  "tv": "Philips 32PFS6402/12 (TP Vision QM164E, QM16XE_F, MediaTek MT5861), France",
+  "method": "adb-disable",
+  "lists": [
+   "models/android-tv/philips-32pfs6402/debloat.txt"
+  ],
+  "package_count": 42,
+  "notes": "2016 platform left on Android 7.1.2: debloat only, the launcher needs Android 8 (minSdk 26); DAC/GEL analytics, usage and framework loggers, the NetTV ad service, demo, Top Picks, stickers, NetTV store and 13 web apps, TeamViewer QuickSupport; Assistant and Playcast off by choice; Chromecast and updates kept; two packages need `TVINPUT_ALLOW=1`; screenshots come back empty; port 5555 stays open with debugging off, see [notes](philips-32pfs6402/README.md)",
+  "match_tokens": [
+   "01610224",
+   "102",
+   "2016",
+   "2018-08-05",
+   "2k16eu1",
+   "32pfs6402",
+   "mt5861",
+   "n2g48h",
+   "philips-32pfs6402",
+   "philips-49pus6561",
+   "ps1",
+   "qm163e",
+   "qm164e",
+   "qm16xe",
+   "qm16xe_f",
+   "qm16xe_u"
+  ],
+  "status": "tested-by-submitter",
+  "source": "https://github.com/Gathin23/cleanyourtv/tree/main/examples/philips-32pfs6402"
  },
  {
   "id": "philips-49pus6561",
@@ -4515,13 +4844,13 @@
   "brand_slug": "philips",
   "platform": "android-tv",
   "os": "Android TV 11 and 14",
-  "tv": "Philips 50PUD7406/43 (TPV, PH0M_EA_T32, MStar/MediaTek), Chile; 55PUS7906/12, Lithuania; 50PUS7906/12, Germany; 43PUS7406/12, Italy; 50PUD7406/77, Latin America; 50PUS8107/12, EU; 65PUS7956, EU",
+  "tv": "Philips 50PUD7406/43 (TPV, PH0M_EA_T32, MStar/MediaTek), Chile; 55PUS7906/12, Lithuania; 50PUS7906/12, Germany; 43PUS7406/12, Italy; 50PUD7406/77, Latin America; 50PUS8107/12, EU; 65PUS7956, EU; 43PUS8007/12, Germany",
   "method": "adb-disable",
   "lists": [
    "models/android-tv/philips-50pud7406/debloat.txt"
   ],
   "package_count": 23,
-  "notes": "First list for PH0M_EA_T32 (same board as the 65PUG7406/78 notes), not the org.droidtv xtv platform: DAC/GEL analytics, TPV framework logger and CMS client, app gallery, retail demo, partner customizer, recommendations, ambient mode; Chromecast off because a shared network of ~150 hosts kept pausing and closing YouTube (HOME sent by mediashell); point the screensaver away from the disabled backdrop; Assistant and updates kept; a second unit (EU) adds a boot-to-Live-TV quirk and the MMP player as a TV_INPUT_HARDWARE false positive; a third unit (55PUS7906/12, EU, TPM215E) shows HDMI (PS4) and DVB-T work with the list applied and MMP, eum and nettvregistration kept, and adds six candidate lines; a fourth unit (50PUS7906/12, EU) maps the remote's Rakuten key (keycode 249, caught by TPVTvService) to another app with app_keys; a fifth unit (43PUS7406/12, Italy) ran the added Google setup packages, Freeview Play and TalkBack disabled, with CHILI off by choice, and with Live TV and HDMI working; a sixth unit (50PUD7406/77, Latin America) finds that the Home-key helper which forces Home after a reboot stops held volume from ramping, so its owner kept the ramp; a seventh unit (50PUS8107/12, EU) is the first on Android 14 (TPM216E): setupwraith owns the saved Wi-Fi network there, and power_on_home with key_filter false brings Home back after boot while keeping held volume; an eighth unit (65PUS7956, EU) on an AV receiver over ARC finds the remote's volume reaches the receiver over CEC in apps with no on-screen bar (AOSP hides it in system-audio mode), and YouTube and Disney+ sign-in failing with Private DNS on",
+  "notes": "First list for PH0M_EA_T32 (same board as the 65PUG7406/78 notes), not the org.droidtv xtv platform: DAC/GEL analytics, TPV framework logger and CMS client, app gallery, retail demo, partner customizer, recommendations, ambient mode; Chromecast off because a shared network of ~150 hosts kept pausing and closing YouTube (HOME sent by mediashell); point the screensaver away from the disabled backdrop; Assistant and updates kept; a second unit (EU) adds a boot-to-Live-TV quirk and the MMP player as a TV_INPUT_HARDWARE false positive; a third unit (55PUS7906/12, EU, TPM215E) shows HDMI (PS4) and DVB-T work with the list applied and MMP, eum and nettvregistration kept, and adds six candidate lines; a fourth unit (50PUS7906/12, EU) maps the remote's Rakuten key (keycode 249, caught by TPVTvService) to another app with app_keys; a fifth unit (43PUS7406/12, Italy) ran the added Google setup packages, Freeview Play and TalkBack disabled, with CHILI off by choice, and with Live TV and HDMI working; a sixth unit (50PUD7406/77, Latin America) finds that the Home-key helper which forces Home after a reboot stops held volume from ramping, so its owner kept the ramp; a seventh unit (50PUS8107/12, EU) is the first on Android 14 (TPM216E): setupwraith owns the saved Wi-Fi network there, and power_on_home with key_filter false brings Home back after boot while keeping held volume; an eighth unit (65PUS7956, EU) on an AV receiver over ARC finds the remote's volume reaches the receiver over CEC in apps with no on-screen bar (AOSP hides it in system-audio mode), and YouTube and Disney+ sign-in failing with Private DNS on; a ninth unit (43PUS8007/12, Germany) on the seventh unit's Android 14 build ran the list with fastip and packageinfo off and the Source key still working, plus Assistant, TalkBack, text-to-speech and six streaming apps by choice, and lands on Home after a reboot with power_on_home and key_filter false",
   "match_tokens": [
    "000",
    "097",
@@ -4533,6 +4862,7 @@
    "2021",
    "210929",
    "43pus7406",
+   "43pus8007",
    "50pud7406",
    "50pus7906",
    "50pus8107",
@@ -4590,7 +4920,7 @@
    "models/android-tv/philips-50pus8517/debloat.txt"
   ],
   "package_count": 41,
-  "notes": "First `org.droidtv` TP Vision list: DAC analytics uploader (AWS Firehose), Top Picks, app gallery; Assistant, DLNA, IP control off by choice; disabling `eum` or `aurora` leaves persistent `xtv` retrying forever, and `eum` also kills the sources drawer -- see quirk 5; the same list was also run on a 70PUS8505, a 65PUS9206 and a 43PUS8507 (same board and firmware)",
+  "notes": "First `org.droidtv` TP Vision list: DAC analytics uploader (AWS Firehose), Top Picks, app gallery; Assistant, DLNA, IP control off by choice; disabling `eum` or `aurora` leaves persistent `xtv` retrying forever, and `eum` also kills the sources drawer -- see quirk 5; the same list was also run on a 70PUS8505, a 65PUS9206, a 43PUS8507 and a 70PUS8506 (same board and firmware; the 70PUS8506 for three weeks)",
   "match_tokens": [
    "001",
    "2021-2022",
@@ -4619,13 +4949,13 @@
   "brand_slug": "philips",
   "platform": "android-tv",
   "os": "Android TV 11",
-  "tv": "Philips 55OLED707/12 / 55OLED887/12 / 77OLED806/12 / 65OLED707/12 (TP Vision, PH1M_EA_9970A, MediaTek MT5895), UK, Poland, Germany and Croatia",
+  "tv": "Philips 55OLED707/12 / 55OLED887/12 / 77OLED806/12 / 65OLED707/12 / 55OLED806/12 (TP Vision, PH1M_EA_9970A, MediaTek MT5895), UK, Poland, Germany, Croatia and Italy",
   "method": "adb-disable",
   "lists": [
    "models/android-tv/philips-55oled707/debloat.txt"
   ],
   "package_count": 32,
-  "notes": "Same board and firmware build as `philips-50pus8517/`, on an OLED panel: DAC analytics, Top Picks, app gallery and its preload installer, Alexa, setupwraith (Ethernet only, Wi-Fi impact unchecked); `nettvbrowser` must stay or ITVX hangs; Play-Fi re-enables itself at every boot, so it is left out; Chromecast and all used streaming apps kept; on the 55OLED887 (Wi-Fi) setupwraith did not own the Wi-Fi network, Ambilight + Hue sync kept working, and Home at power-on needed `power_on_home_always`; on the 77OLED806 (Ethernet) setupwraith does not claim Home, `aurora` ships disabled with no `xtv` loop, and Home Assistant's JointSpace API on 1926 kept working; a 65OLED707/12 in Croatia showed nothing re-enabled after three days, setupwraith did not own the Wi-Fi network, and Android's screensaver was off from the factory, so `home_idle_clock_minutes` gives Home its idle clock; the AirPlay receiver installs from its GitHub release, as the Play Store calls it not compatible on this 32-bit firmware; [65OLED806/12 notes](philips-55oled707/README.md): one session on the same build with narrower owner-selected changes, voice and firmware updates kept; not a several-day list validation",
+  "notes": "Same board and firmware build as `philips-50pus8517/`, on an OLED panel: DAC analytics, Top Picks, app gallery and its preload installer, Alexa, setupwraith (Ethernet only, Wi-Fi impact unchecked); `nettvbrowser` must stay or ITVX hangs; Play-Fi re-enables itself at every boot, so it is left out; Chromecast and all used streaming apps kept; on the 55OLED887 (Wi-Fi) setupwraith did not own the Wi-Fi network, Ambilight + Hue sync kept working, and Home at power-on needed `power_on_home_always`; on the 77OLED806 (Ethernet) setupwraith does not claim Home, `aurora` ships disabled with no `xtv` loop, and Home Assistant's JointSpace API on 1926 kept working; a 65OLED707/12 in Croatia showed nothing re-enabled after three days, setupwraith did not own the Wi-Fi network, and Android's screensaver was off from the factory, so `home_idle_clock_minutes` gives Home its idle clock; the AirPlay receiver installs from its GitHub release, as the Play Store calls it not compatible on this 32-bit firmware; on a 55OLED806/12 in Italy nothing re-enabled itself in three weeks, and its notes explain three Philips puzzles: video in a small box in every app (picture format on Unscaled, greyed out in apps), power-on back on HDMI 1 (`persist.sys.power_lastapp` remembers only four apps) and the storage popup every 15 minutes (TVStorageMonitorService under 15% free); [65OLED806/12 notes](philips-55oled707/README.md): one session on the same build with narrower owner-selected changes, voice and firmware updates kept; not a several-day list validation",
   "match_tokens": [
    "001",
    "2021",
@@ -4633,6 +4963,7 @@
    "21029",
    "211108",
    "55oled707",
+   "55oled806",
    "55oled887",
    "65oled707",
    "77oled806",
@@ -4799,13 +5130,13 @@
   "brand_slug": "philips",
   "platform": "android-tv",
   "os": "Android TV 11",
-  "tv": "Philips 65OLED706/12 (TP Vision, PH1M_EA_9970A, MediaTek MT5895), France; 55OLED706/12, Poland",
+  "tv": "Philips 65OLED706/12 (TP Vision, PH1M_EA_9970A, MediaTek MT5895), France; 55OLED706/12, Poland and Germany",
   "method": "adb-disable",
   "lists": [
    "models/android-tv/philips-65oled706/debloat.txt"
   ],
   "package_count": 25,
-  "notes": "Same board and firmware build as `philips-50pus8517/` and `philips-55oled707/`: DAC analytics, Top Picks, app gallery and auto-installs, HD+/M7 operator promos, Alexa, Mimi, Dropbox; aurora was already off from the factory with no xtv retry loop; the OLED logo screensaver takes over after ~5 min, so `home_idle_clock_minutes` must be 4 or less; Assistant, Play-Fi, DLNA, IP control kept; remote fully tested, reboot-checked",
+  "notes": "Same board and firmware build as `philips-50pus8517/` and `philips-55oled707/`: DAC analytics, Top Picks, app gallery and auto-installs, HD+/M7 operator promos, Alexa, Mimi, Dropbox; aurora was already off from the factory with no xtv retry loop; the OLED logo screensaver takes over after ~5 min, so `home_idle_clock_minutes` must be 4 or less; Assistant, Play-Fi, DLNA, IP control kept; `com.phorus.playfi.tv` re-enables at boot on a 55OLED706/12 (hide in launcher); hide non-existent analog inputs (`HW1`–`HW4`) via `input_sources`; remote fully tested, reboot-checked",
   "match_tokens": [
    "001",
    "1920x1080",
@@ -4972,34 +5303,34 @@
   "brand_slug": "philips",
   "platform": "android-tv",
   "os": "Android TV 8.0",
-  "tv": "Philips 65PUS8102/12 (TP Vision TPM171E, PH7M_EU_5596, MediaTek MT5891), Europe",
+  "tv": "Philips 65PUS8102/12 / 65PUS8602/12 (TP Vision TPM171E, PH7M_EU_5596, MediaTek MT5891), Europe",
   "method": "adb-disable",
   "lists": [
+   "models/android-tv/philips-65pus8102/debloat-65pus8602.txt",
    "models/android-tv/philips-65pus8102/debloat.txt"
   ],
-  "package_count": 35,
-  "notes": "Extends the 55PUS7503 list on the same firmware: DAC/GEL analytics, Inscape ACR client (its `inscape_fp` daemon needs root), NetTV store and 13 web apps, Assistant and Alexa off by choice; keep `nettvbrowser`, it is the HbbTV handler; RSA prompt needed revoke + mains power cycle",
+  "package_count": 13,
+  "notes": "Extends the 55PUS7503 list on the same firmware: DAC/GEL analytics, Inscape ACR client (its `inscape_fp` daemon needs root), NetTV store and 13 web apps, Assistant and Alexa off by choice; keep `nettvbrowser`, it is the HbbTV handler; RSA prompt needed revoke + mains power cycle; a 65PUS8602/12 in Germany on the same firmware has its own list (`debloat-65pus8602.txt`): the ARD and ARTE NetTV web apps stop opening once the NetTV store packages are off, so that list leaves them on; its RSA prompt only came with Google's adb",
   "match_tokens": [
    "000",
    "001",
    "107",
-   "1080p",
    "143",
    "2017",
    "2021-01-05",
-   "2021-12-07",
-   "3840x2160",
+   "3-sided",
    "4718",
    "5596",
    "65pus8102",
-   "armeabi-v7a",
+   "65pus8602",
+   "debloat-65pus8602",
    "mt5891",
    "ph7m",
    "ph7m_eu_5596",
-   "philips-55pus7503",
    "philips-65pus8102",
    "tpm171e",
-   "tpm171e_r"
+   "tpm171e_r",
+   "tpm17xe_96"
   ],
   "status": "tested-by-submitter",
   "source": "https://github.com/Gathin23/cleanyourtv/tree/main/examples/philips-65pus8102"
@@ -5536,6 +5867,35 @@
   "source": "https://github.com/Gathin23/cleanyourtv/tree/main/examples/rca-rc50a21s-4ksm"
  },
  {
+  "id": "realme-smart-tv",
+  "brand": "realme",
+  "brand_slug": "realme",
+  "platform": "android-tv",
+  "os": "Android TV 11",
+  "tv": "realme Smart TV (SW4H_FF, Skyworth board, MediaTek m7332)",
+  "method": "adb-disable",
+  "lists": [
+   "models/android-tv/realme-smart-tv/debloat.txt"
+  ],
+  "package_count": 20,
+  "notes": "Skyworth daily play, ACR, e-POP player, shop customizer, QJY browser, speedchannels, partner apps; Google feedback, recommendation rows, calendar leftovers; streaming apps, Assistant, Chromecast, USB player kept; `com.mediatek.partner.netflix` kept for remote hotkeys (`KEYCODE_YOUTUBE`, `KEYCODE_PRIMEVIDEO`); Live TV is `com.smartdevice.livetv`",
+  "match_tokens": [
+   "106",
+   "1920x1080",
+   "2023-10-06",
+   "220609",
+   "320",
+   "armeabi-v7a",
+   "m7332",
+   "rtm5",
+   "sw4h",
+   "sw4h_ff",
+   "sw4h_ff_realme"
+  ],
+  "status": "tested-by-submitter",
+  "source": "https://github.com/Gathin23/cleanyourtv/tree/main/examples/realme-smart-tv"
+ },
+ {
   "id": "redmi-mitv-antl0",
   "brand": "Redmi",
   "brand_slug": "xiaomi",
@@ -5699,28 +6059,50 @@
   "brand_slug": "salora",
   "platform": "android-tv",
   "os": "Android TV 11",
-  "tv": "Salora SMART24TV (Vestel-built, Ata/Aslan, tokyo, MediaTek m5621), Italy",
+  "tv": "Salora SMART24TV / Hitachi 32HAK4258 (Vestel-built, Ata/Aslan, tokyo, MediaTek m5621), Italy",
   "method": "adb-disable",
   "lists": [
+   "models/android-tv/salora-smart24tv/debloat-keep-cast.txt",
    "models/android-tv/salora-smart24tv/debloat.txt"
   ],
-  "package_count": 15,
-  "notes": "Same Vestel family as the Toshiba Cosmos list: Vestel reporter and \"speed up\" cleaner, MStar disclaimer, E-User Manual, Google feedback/calendar/storefront, UK Freeview Play; **keep `fusion.android.tv.demo`** (it handles the Input key here, as on JVC menlo); Netflix, Prime, YouTube Music, Assistant, Chromecast and the USB player left commented out (off on the tested set by the owner's choice); 1 GB low-RAM; reboot-checked; USB debugging alone opens 5555",
+  "package_count": 11,
+  "notes": "Same Vestel family as the Toshiba Cosmos list: Vestel reporter and \"speed up\" cleaner, MStar disclaimer, E-User Manual, Google feedback/calendar/storefront, UK Freeview Play; **keep `fusion.android.tv.demo`** (it handles the Input key here, as on JVC menlo); Netflix, Prime, YouTube Music, Assistant, Chromecast and the USB player left commented out (off on the tested set by the owner's choice); 1 GB low-RAM; reboot-checked; USB debugging alone opens 5555; Hitachi 32HAK4258 second unit: its own cautious list (`debloat-keep-cast.txt`) keeps the stock launcher and Chromecast, three weeks of daily use, and a black picture with sound at power-on that came several times a week has not come back since",
   "match_tokens": [
    "001",
-   "1280x720",
-   "13968254",
    "2025-06-01",
-   "2025-08-21",
+   "2026-10-22",
    "250820",
-   "251019",
-   "armeabi-v7a",
+   "32hak4258",
+   "908",
    "m5621",
    "salora-smart24tv",
    "smart24tv"
   ],
   "status": "tested-by-submitter",
   "source": "https://github.com/Gathin23/cleanyourtv/tree/main/examples/salora-smart24tv"
+ },
+ {
+  "id": "sampo-oled-55zw8212",
+  "brand": "SAMPO",
+  "brand_slug": "sampo",
+  "platform": "android-tv",
+  "os": "Google TV 11",
+  "tv": "SAMPO OLED-55ZW8212 (SWTV-22TW-4K, Skyworth anaheim, MediaTek), Taiwan",
+  "method": "adb-disable",
+  "lists": [
+   "models/android-tv/sampo-oled-55zw8212/debloat.txt"
+  ],
+  "package_count": 20,
+  "notes": "Skyworth board: telemetry (recordactivation, aftersale), DailyPlay recommendations and launcher customizer, store demo, Smart Connect, CastPlay and Miracast off; setupwraith disabled (its RecoveryActivity kept Home, Wi-Fi owned by android.uid.system, Chromecast still works); gear (83), guide (172) and account (288) remapped through HomeKeyService",
+  "match_tokens": [
+   "068",
+   "250416",
+   "oled-55zw8212",
+   "sampo-oled-55zw8212",
+   "swtv-22tw-4k"
+  ],
+  "status": "tested-by-submitter",
+  "source": "https://github.com/Gathin23/cleanyourtv/tree/main/examples/sampo-oled-55zw8212"
  },
  {
   "id": "sankey-smart-tv-hi3751v350",
@@ -5969,6 +6351,29 @@
   ],
   "status": "tested-by-submitter",
   "source": "https://github.com/Gathin23/cleanyourtv/tree/main/examples/sharp-2t-c32gh3000i"
+ },
+ {
+  "id": "sharp-32gf3265e",
+  "brand": "SHARP",
+  "brand_slug": "sharp",
+  "platform": "android-tv",
+  "os": "Google TV 11",
+  "tv": "Sharp 32GF3265E (umeda, Skyworth board)",
+  "method": "adb-disable",
+  "lists": [
+   "models/android-tv/sharp-32gf3265e/debloat.txt"
+  ],
+  "package_count": 15,
+  "notes": "Retail demo, telemetry and Assistant off; stock Google TV home replaced by the repo launcher; gear button opens the quick-settings panel (keycode 83); [notes](sharp-32gf3265e/README.md)",
+  "match_tokens": [
+   "004",
+   "241015",
+   "32gf3265e",
+   "rtm9",
+   "sharp-32gf3265e"
+  ],
+  "status": "tested-by-submitter",
+  "source": "https://github.com/Gathin23/cleanyourtv/tree/main/examples/sharp-32gf3265e"
  },
  {
   "id": "sharp-4t-c43dl1",
@@ -6662,7 +7067,7 @@
    "models/android-tv/sony-bravia-4k-gb/debloat.txt"
   ],
   "package_count": 24,
-  "notes": "Samba TV ACR, Sony Select/promos/Discover, demo mode, device agents; same firmware as the X900E; Chromecast, mirroring, DLNA and USB media kept on purpose",
+  "notes": "Samba TV ACR, Sony Select/promos/Discover, demo mode, device agents; same firmware as the X900E; Chromecast, mirroring, DLNA and USB media kept on purpose. KD-55XE9005 Italy: build PTT1.190515.001.S54 / 672201; conservative four-package setup including stock launcher, with Live TV, EPG, HbbTV and HDMI-CEC verified after reboot. See debloat.txt for details.",
   "match_tokens": [
    "001",
    "190515",
@@ -6747,14 +7152,14 @@
   "brand_slug": "sony",
   "platform": "android-tv",
   "os": "Android TV 10",
-  "tv": "Sony BRAVIA 4K UR3 / KD-55X8000H / KD-65A8 / XBR-55A8H (BRAVIA_UR3, MediaTek mt5893), EU, TW and US",
+  "tv": "Sony BRAVIA 4K UR3 / KD-55X8000H / KD-65A8 / XBR-55A8H / KD-43XH8196 (BRAVIA_UR3, MediaTek mt5893), EU, TW and US",
   "method": "adb-disable",
   "lists": [
    "models/android-tv/sony-bravia-4k-ur3/debloat-display-only.txt",
    "models/android-tv/sony-bravia-4k-ur3/debloat.txt"
   ],
   "package_count": 49,
-  "notes": "First UR3 list: Samba TV ACR, Sony/Qterics agents, Sony promos/Select, demo mode, assistant; YouTube Music/Play Games/Play Movies off by choice; Chromecast, AirPlay/HomeKit and the Apple TV app kept; FallbackHome is the only other HOME claimant; screnmirroring.com typo is genuine; also confirmed on KD-55X8000H (TW, BRAVIA_UR3_TW, adds bugreportsender, reference launcher verified); also confirmed on KD-65A8 (A8 OLED 2020, EU/UK build, one evening so far): adds usercontext, Sony bug-report uploader, hotel mode, RS-232 support (commented), reference launcher verified on the real remote; reboot-checked; XBR-55A8H (US OLED) as a display for an Apple TV: [debloat-display-only.txt](sony-bravia-4k-ur3/debloat-display-only.txt) adds AirPlay/HomeKit, Chromecast, DLNA, the Sony Alexa/Google Home links, `videoframeserver` (reads Samba TV data and the EPG) and the USB players, with streaming and the phone-remote service left as a choice; keep `com.vewd.core.service`, which the persistent AirPlay app crash-loops without",
+  "notes": "First UR3 list: Samba TV ACR, Sony/Qterics agents, Sony promos/Select, demo mode, assistant; YouTube Music/Play Games/Play Movies off by choice; Chromecast, AirPlay/HomeKit and the Apple TV app kept; FallbackHome is the only other HOME claimant; screnmirroring.com typo is genuine; also confirmed on KD-55X8000H (TW, BRAVIA_UR3_TW, adds bugreportsender, reference launcher verified); also confirmed on KD-65A8 (A8 OLED 2020, EU/UK build, one evening so far): adds usercontext, Sony bug-report uploader, hotel mode, RS-232 support (commented), reference launcher verified on the real remote; reboot-checked; XBR-55A8H (US OLED) as a display for an Apple TV: [debloat-display-only.txt](sony-bravia-4k-ur3/debloat-display-only.txt) adds AirPlay/HomeKit, Chromecast, DLNA, the Sony Alexa/Google Home links, `videoframeserver` (reads Samba TV data and the EPG) and the USB players, with streaming and the phone-remote service left as a choice; keep `com.vewd.core.service`, which the persistent AirPlay app crash-loops without; also confirmed on KD-43XH8196 (XH81 2020, EU build, two days so far): the 14 list lines not already off, plus usercontext and the Sony bug-report uploader, reboot-checked, reference launcher verified on the real remote; Chromecast, AirPlay/HomeKit and videoframeserver off there by choice (commented in the list)",
   "match_tokens": [
    "006",
    "200305",
@@ -6764,6 +7169,7 @@
    "a8h",
    "bravia_ur3",
    "bravia_ur3_uc-user",
+   "kd-43xh8196",
    "kd-55x8000h",
    "kd-65a8",
    "mt5893",
@@ -6789,7 +7195,7 @@
    "models/android-tv/sony-bravia-4k-vh1/debloat.txt"
   ],
   "package_count": 37,
-  "notes": "Samba TV ACR, Sony/Qterics/IDD agents, demo/hotel mode, Select/promos/help; stock tvlauncher off for CleanYourTV; Assistant and Netflix off by choice; Chromecast and firmware updates kept; setupwraith left enabled (Home already on the custom launcher); same platform as [docs/devices/sony-kd-55x9000h.md](../docs/devices/sony-kd-55x9000h.md) (PA firmware notes); on UK units keep com.youview.poa, the Freeview Play app that hosts BBC iPlayer, ITVX, Channel 4 and 5 ([docs/devices/sony-youview-uk-catchup.md](../docs/devices/sony-youview-uk-catchup.md))",
+  "notes": "Samba TV ACR, Sony/Qterics/IDD agents, demo/hotel mode, Select/promos/help (plus optional XBR-65X900H S159 IoT, BRAVIA CAM, B2B Node.js and DLNA groups); stock tvlauncher off for CleanYourTV; Assistant and Netflix off by choice; Chromecast and firmware updates kept; setupwraith left enabled (Home already on the custom launcher); same platform as [docs/devices/sony-kd-55x9000h.md](../docs/devices/sony-kd-55x9000h.md) (PA firmware notes); on UK units keep com.youview.poa, the Freeview Play app that hosts BBC iPlayer, ITVX, Channel 4 and 5 ([docs/devices/sony-youview-uk-catchup.md](../docs/devices/sony-youview-uk-catchup.md))",
   "match_tokens": [
    "001",
    "2020",
@@ -6826,7 +7232,7 @@
   "lists": [
    "models/android-tv/sony-bravia-4k-vh2/debloat.txt"
   ],
-  "package_count": 33,
+  "package_count": 31,
   "notes": "Samba TV ACR, Sony/Qterics device agents, demo mode, help tiles; setupwraith off for a custom launcher; Sony promos/Select/IoT off (factory-disabled on EU, enabled on UC); Assistant, Chromecast, firmware updates kept; on UC, PA (India), the XR-65A83J M_EU and the XR-55X90JK SA units, launcherx outranks set-home-activity at priority=2, so the stock launcher must be disabled too; PA unit adds Sony tab, partner auto-installs, usage agents and India preloads (Gaana, Amazon Music, iTuner, Sony Pictures Core); XR-65A83J owner apps (Spotify, Tidal, CuriosityStream, Facebook) also disabled and lived with; [remote keys note](../docs/devices/sony-bravia-4k-vh2-remote-keys.md) (Apps button, Audio button in TVX)",
   "match_tokens": [
    "001",
@@ -7009,6 +7415,37 @@
   ],
   "status": "tested-by-submitter",
   "source": "https://github.com/Gathin23/cleanyourtv/tree/main/examples/sony-bravia-4k-vh21-us"
+ },
+ {
+  "id": "sony-bravia-8-ii",
+  "brand": "Sony",
+  "brand_slug": "sony",
+  "platform": "android-tv",
+  "os": "Google TV 14",
+  "tv": "Sony BRAVIA 8 II (K-55XR8M2, BRAVIA_AE2), UK/EU",
+  "method": "adb-disable",
+  "lists": [
+   "models/android-tv/sony-bravia-8-ii/debloat.txt"
+  ],
+  "package_count": 14,
+  "notes": "Samba TV ACR, Sony/Qterics device agents, IDD, My BRAVIA promos, Sony Select and Sony tab, demo mode; Chromecast and AirPlay off by choice; `com.youview.poa` kept for Freeview Play; setupwraith owned the saved Wi-Fi, so re-join it before disabling; 14 packages",
+  "match_tokens": [
+   "001",
+   "2025",
+   "2026-07-05",
+   "2026-11-08",
+   "250422",
+   "603100",
+   "ae2",
+   "bravia_ae2",
+   "bravia_ae2_eu-user",
+   "k-55xr8m2",
+   "sony-bravia-8-ii",
+   "sony-bravia-ae2",
+   "ukn4"
+  ],
+  "status": "tested-by-submitter",
+  "source": "https://github.com/Gathin23/cleanyourtv/tree/main/examples/sony-bravia-8-ii"
  },
  {
   "id": "sony-bravia-9-ii",
@@ -7582,7 +8019,7 @@
    "models/android-tv/sony-kd-55xf7596/debloat.txt"
   ],
   "package_count": 38,
-  "notes": "Same build as the X900F (ATV3) plus the XE8596 leftovers: Samba TV ACR, Sony/Qterics agents, Sony Select/promos/Discover, launcher customizer, recommendation rows, partner auto-installs, demo mode, hotel/pro-mode b2b; Assistant, USB players, dead Play Music off by choice; Chromecast, mirroring, DLNA, phone remote, Prime Video, firmware updates, Sony IP control and vendorprotocol kept; smarthomesettings is a TV_INPUT_HARDWARE false positive; launcher works; reboot-checked. A 65-inch EU set of the same fingerprint (en-GB, 3840x2160) also runs the launcher as Home; its disabled packages are a subset and that unit was not reboot-checked; a third 65-inch EU unit ran the list (plus DLNA and the phone remote) and the launcher, reboot-checked: [notes](sony-kd-55xf7596/README.md)",
+  "notes": "Same build as the X900F (ATV3) plus the XE8596 leftovers: Samba TV ACR, Sony/Qterics agents, Sony Select/promos/Discover, launcher customizer, recommendation rows, partner auto-installs, demo mode, hotel/pro-mode b2b; Assistant, USB players, dead Play Music off by choice; Chromecast, mirroring, DLNA, phone remote, Prime Video, firmware updates, Sony IP control and vendorprotocol kept; smarthomesettings is a TV_INPUT_HARDWARE false positive; launcher works; reboot-checked. A 65-inch EU set of the same fingerprint (en-GB, 3840x2160) also runs the launcher as Home; its disabled packages are a subset and that unit was not reboot-checked; a third 65-inch EU unit ran the list (plus DLNA and the phone remote) and the launcher, reboot-checked; a fourth 43-inch EU unit confirmed the HOME priority clamp (priority 2 vs 0) and Google media debloat: [notes](sony-kd-55xf7596/README.md)",
   "match_tokens": [
    "001",
    "190515",
@@ -7801,6 +8238,34 @@
   ],
   "status": "tested-by-submitter",
   "source": "https://github.com/Gathin23/cleanyourtv/tree/main/examples/sony-kdl-55w800c"
+ },
+ {
+  "id": "sony-kdl-55w805c",
+  "brand": "Sony",
+  "brand_slug": "sony",
+  "platform": "android-tv",
+  "os": "Android TV 7.0",
+  "tv": "Sony BRAVIA KDL-55W805C (2015, \"BRAVIA 2015\", SVP-DTV15, MediaTek), EU firmware",
+  "method": "adb-disable",
+  "lists": [
+   "models/android-tv/sony-kdl-55w805c/debloat.txt"
+  ],
+  "package_count": 32,
+  "notes": "Sony/Qterics device agents, Discover/BIVL, the Featured apps row (`sonyshelf`) and the recommendation services, Sony Select, retail demo, help apps, B2B extras; mirroring, DLNA, the USB players and the Netflix button left as comments (off on this set by choice); `b2b.hotelmode` and `tvx` kept; a week of use, reboot-checked; [README](sony-kdl-55w805c/README.md): a minSdk 24 launcher build as Home, Album and the Inputs row, HbbTV off over ADB, a USB soundbar, AirPlay",
+  "match_tokens": [
+   "2015",
+   "2026-10-25",
+   "2026-11-01",
+   "433",
+   "kdl-55w805c",
+   "nrd91n",
+   "s34",
+   "sony-kdl-55w805c",
+   "svp-dtv15",
+   "svpdtv15_eu-user"
+  ],
+  "status": "tested-by-submitter",
+  "source": "https://github.com/Gathin23/cleanyourtv/tree/main/examples/sony-kdl-55w805c"
  },
  {
   "id": "sony-kj-55x9300d",
@@ -8423,7 +8888,7 @@
    "models/android-tv/tcl-32s5400a/debloat.txt"
   ],
   "package_count": 14,
-  "notes": "Same C06 platform as `tcl-40s5400a/`, but older AR2101 / V8-T221T05-LF1V005 firmware and SonyLIV/YuppTV preloads; TCL account/TGuard/promos, Google extras, regional preloads; firmware updater kept (ttvs is the updater); stock launcher priority 2, keep the remote/BT/TCL settings packages; a second unit on V8-T221T01-LF1V121 needs 500 MB free before any install (`pm trim-caches`)",
+  "notes": "Same C06 platform as `tcl-40s5400a/`, but older AR2101 / V8-T221T05-LF1V005 firmware and SonyLIV/YuppTV preloads; TCL account/TGuard/promos, Google extras, regional preloads; firmware updater kept (ttvs is the updater); stock launcher priority 2, keep the remote/BT/TCL settings packages; a second unit on V8-T221T01-LF1V121 needs 500 MB free before any install (`pm trim-caches`); a third unit (AR2101 / AR19) reboot-checked with the launcher as Home, usercenter back on after reboot",
   "match_tokens": [
    "2022-01-05",
    "2023",
@@ -8474,6 +8939,40 @@
   ],
   "status": "tested-by-submitter",
   "source": "https://github.com/Gathin23/cleanyourtv/tree/main/examples/tcl-32s5k"
+ },
+ {
+  "id": "tcl-32s6200",
+  "brand": "TCL",
+  "brand_slug": "tcl",
+  "platform": "android-tv",
+  "os": "Android TV 11",
+  "tv": "TCL 32S6200 (S65A, C06, C06_2K_GB, MediaTek MT9221), France",
+  "method": "adb-disable",
+  "lists": [
+   "models/android-tv/tcl-32s6200/debloat.txt"
+  ],
+  "package_count": 21,
+  "notes": "V8-T221T01-LF1V108 firmware, same platform as `tcl-32s5k/`; TCL account/TGuard/promo rows, Google extras, TTS/TalkBack, photo screensaver and USB players off; Chromecast, voice and the ttvs updater kept; usercenter and Rakuten re-enabled at every boot, the TCL video portal once in four days; setupwraith safe (system owns the Wi-Fi); remote buttons work with no key helper",
+  "match_tokens": [
+   "1280x720",
+   "2022-01-05",
+   "32s6200",
+   "ar14",
+   "ar2101",
+   "c06",
+   "c06_2k_gb",
+   "mt5867",
+   "mt9221",
+   "s65a",
+   "tcl-32es570f",
+   "tcl-32s5k",
+   "tcl-32s6200",
+   "tcl-40s5400a",
+   "tcl-eu-mt9221-01",
+   "v8-t221t01-lf1v108"
+  ],
+  "status": "tested-by-submitter",
+  "source": "https://github.com/Gathin23/cleanyourtv/tree/main/examples/tcl-32s6200"
  },
  {
   "id": "tcl-32sf560-fire-tv",
@@ -8943,24 +9442,67 @@
   "source": "https://github.com/Gathin23/cleanyourtv/tree/main/examples/tcl-50p735"
  },
  {
+  "id": "tcl-50s434",
+  "brand": "TCL",
+  "brand_slug": "tcl",
+  "platform": "android-tv",
+  "os": "Android TV 11",
+  "tv": "TCL 50S434 (4-Series, C03_4K_NA, BeyondTV4, Realtek rtd288o, 2 GB), US AR02 build",
+  "method": "adb-disable",
+  "lists": [
+   "models/android-tv/tcl-50s434/debloat.txt"
+  ],
+  "package_count": 28,
+  "notes": "US 4-Series C03_4K_NA AR02 on the same BeyondTV4 / rtd288o family as `tcl-50c725k/` (BeyondTV6 AR10) and `tcl-beyondtv4-uk/` (AR05): TCL telemetry, Channel, HOME, promos, Guard, gallery and the USB media player off; stock `tvlauncher` replaced by `launcher/` with remote app, Input and gear buttons and volume repeat still working, no key helper needed; setupwraith off after re-joining Wi-Fi; firmware updater left enabled in the shared list; Chromecast kept; reboot-checked and lived with for two weeks",
+  "match_tokens": [
+   "001",
+   "200622",
+   "32-bit",
+   "4-series",
+   "50s434",
+   "55s546",
+   "ar02",
+   "ar05",
+   "ar10",
+   "beyondtv4",
+   "beyondtv6",
+   "c03",
+   "c03_4k_na",
+   "g03_4k_us",
+   "rp1a",
+   "rtd288o",
+   "tcl-50c725k",
+   "tcl-50s434",
+   "tcl-55s546-us",
+   "tcl-beyondtv4-uk"
+  ],
+  "status": "tested-by-submitter",
+  "source": "https://github.com/Gathin23/cleanyourtv/tree/main/examples/tcl-50s434"
+ },
+ {
   "id": "tcl-55a300w",
   "brand": "TCL",
   "brand_slug": "tcl",
   "platform": "android-tv",
   "os": "Google TV 12",
-  "tv": "TCL 55A300W picture-frame TV (2023, G08, G08_4K_US_NF, MediaTek MT9653), US",
+  "tv": "TCL 55A300W and 65A300W picture-frame TVs (2023-2024, G08, G08_4K_US_NF, MediaTek MT9653), US",
   "method": "adb-disable",
   "lists": [
    "models/android-tv/tcl-55a300w/debloat.txt"
   ],
-  "package_count": 22,
-  "notes": "Android 12 build of the [G08 US list](tcl-g08-us-google-tv/) board: TCL TV+, messages, e-sticker, dashboard and home pushes, store/hotel demo, log capture, manual, TCL account; Alexa, Channel+, hearing/solo apps, Play Movies and Play Games off by choice; AirPlay, Chromecast, voice and streaming apps kept; setupwraith's Wi-Fi re-joined in Settings first; launcher with app_keys for Netflix, YouTube, Settings and the TV button, which opens the program guide again (held volume steps); one day of use, reboot-checked",
+  "package_count": 21,
+  "notes": "Android 12 build of the [G08 US list](tcl-g08-us-google-tv/) board, firmware AS15 and AS24: TCL TV+, messages, e-sticker, dashboard and home pushes, hotel demo, log capture, manual, TCL account; Alexa, Channel+, hearing/solo apps, Play Movies and Play Games off by choice; com.tcl.exhibit kept, as it is the art-mode gallery on the 65A300W; AirPlay, Chromecast, voice and streaming apps kept; setupwraith's Wi-Fi re-joined in Settings first on both; launcher with app_keys for Netflix, YouTube and the TV button, Settings on keycode 83 or 4077; reboot-checked on both",
   "match_tokens": [
    "001",
    "2023",
+   "2023-2024",
+   "2024",
    "230203",
    "55a300w",
+   "65a300w",
+   "a300w",
    "as15",
+   "as24",
    "au16",
    "g08",
    "g08_4k_us_nf",
@@ -9305,17 +9847,18 @@
   "brand_slug": "tcl",
   "platform": "android-tv",
   "os": "Google TV 14",
-  "tv": "TCL 55Q7D Pro (Smart TV Pro, G08, G08_4K_GB, MediaTek tcl9618), EU Google TV build",
+  "tv": "TCL 55Q7D Pro and 50QM8B (Smart TV Pro, G08, G08_4K_GB, MediaTek tcl9618), EU Google TV build",
   "method": "adb-disable",
   "lists": [
    "models/android-tv/tcl-55q7d-pro-google-tv/debloat.txt"
   ],
   "package_count": 33,
-  "notes": "EU build of the G08 (UTT2.250416.001 AU02): TCL pushes, account and retail demo, telemetry, the Android 14 ad and privacy services, duplicate webviews and Play Games; `com.tcl.interactive` disabled and the Source key still opens the input list, unlike the Android 12 EU list; `com.tcl.ttvs` kept as the firmware updater; one evening of use, reboot-checked",
+  "notes": "EU build of the G08 (UTT2.250416.001 AU02): TCL pushes, account and retail demo, telemetry, the Android 14 ad and privacy services, duplicate webviews and Play Games; `com.tcl.interactive` disabled and the Source key still opens the input list, unlike the Android 12 EU list; `com.tcl.ttvs` kept as the firmware updater; one evening of use on the 55Q7D, 24 days on the 50QM8B (Germany), reboot-checked",
   "match_tokens": [
    "001",
    "2026",
    "250416",
+   "50qm8b",
    "55q7d",
    "85rm7l",
    "au02",
@@ -9335,22 +9878,55 @@
   "source": "https://github.com/Gathin23/cleanyourtv/tree/main/examples/tcl-55q7d-pro-google-tv"
  },
  {
+  "id": "tcl-55s450g",
+  "brand": "TCL",
+  "brand_slug": "tcl",
+  "platform": "android-tv",
+  "os": "Google TV 11",
+  "tv": "TCL 55S450G (G03_4K_US_NF_DB, BeyondTV4, AR24), US",
+  "method": "adb-disable",
+  "lists": [
+   "models/android-tv/tcl-55s450g/debloat.txt"
+  ],
+  "package_count": 25,
+  "notes": "AR24, not the 55S546 GTV93 list: TCL telemetry, promos, TCL Channel and TCL+ off; TCL voice off by choice; firmware updater kept; launcherx off and both key helpers required, held volume still ramps; setupwraith did not own the Wi-Fi; lived with 8-10 November 2026; [device note](../docs/devices/tcl-55s450g.md); 25 packages",
+  "match_tokens": [
+   "001",
+   "200622",
+   "2023-03-05",
+   "55s450g",
+   "ar24",
+   "beyondtv4",
+   "g03",
+   "g03_4k_us_nf_db",
+   "gtv93",
+   "rp1a",
+   "rtd288o",
+   "tcl-55s450g",
+   "tcl-55s546-us",
+   "tcl-g03-google-tv"
+  ],
+  "status": "tested-by-submitter",
+  "source": "https://github.com/Gathin23/cleanyourtv/tree/main/examples/tcl-55s450g"
+ },
+ {
   "id": "tcl-55s470g",
   "brand": "TCL",
   "brand_slug": "tcl",
   "platform": "android-tv",
   "os": "Google TV 12",
-  "tv": "TCL 55S470G (G10, G10_4K_US_NF, Realtek), US",
+  "tv": "TCL 55S470G (G10, G10_4K_US_NF, Realtek), US; also TCL 65S450G-CA, Canada (same build)",
   "method": "adb-disable",
   "lists": [
    "models/android-tv/tcl-55s470g/debloat.txt"
   ],
   "package_count": 29,
-  "notes": "Same build as the G10 list, but Samba TV, logkit and ttvs ship enabled; ttvs kept (it hosts the firmware updater) and re-enables Samba's front end at boot, so opt out in Settings > Privacy too; Assistant voice and Chromecast off by choice; setupwraith off (Wi-Fi belonged to android.uid.system); remote gear button (keycode 83) opens the quick settings panel and the app buttons are remapped (Pluto TV opens Tubi); `APP_AUTO_START` must be allowed for the launcher or TclAppBoot stops the key service at boot; reboot-checked",
+  "notes": "Same build as the G10 list, but Samba TV, logkit and ttvs ship enabled; ttvs kept (it hosts the firmware updater) and re-enables Samba's front end at boot, so opt out in Settings > Privacy too; Assistant voice and Chromecast off by choice; setupwraith off (Wi-Fi belonged to android.uid.system); remote gear button (keycode 83) opens the quick settings panel and the app buttons are remapped (Pluto TV opens Tubi); `APP_AUTO_START` must be allowed for the launcher or TclAppBoot stops the key service at boot; reboot-checked; on the Canada 65S450G-CA, Samba TV shipped disabled and refuses pm disable-user, Assistant and Chromecast were kept, Netflix, TCL TV+ and TCL Live were off by choice, and with the gear on HomeKeyService, consume_volume_keys brought back the held-volume ramp",
   "match_tokens": [
    "001",
    "230203",
    "55s470g",
+   "65s450g-ca",
    "as50",
    "g10",
    "g10_4k_us_nf",
@@ -9424,13 +10000,13 @@
   "brand_slug": "tcl",
   "platform": "android-tv",
   "os": "Google TV 14",
-  "tv": "TCL 65C6K (Smart TV Pro, G08, G08_4K_GB, MediaTek tcl9618 / mt5896, SoC MT9689), Latin America; also TCL 55C6K, Vietnam",
+  "tv": "TCL 65C6K (Smart TV Pro, G08, G08_4K_GB, MediaTek tcl9618 / mt5896, SoC MT9689), Latin America; also TCL 55C6K, Vietnam & India",
   "method": "adb-disable",
   "lists": [
    "models/android-tv/tcl-65c6k-google-tv/debloat.txt"
   ],
   "package_count": 27,
-  "notes": "Same firmware build as the C755 and 85RM7L lists (UTT2.250416.001 AU02); TCL promos, TCL Live, store/hotel demo, Alexa, soundbar updater and the Android 14 ad services; TCL Home (com.tcl.dashboard) off too, unlike the C755, with every remote button still working; Assistant, Play Games and YouTube Music off by choice; Chromecast, AirPlay, Miracast, T-Cast (so ttvs stays), game bar and USB media kept; debloat only, stock launcher and setupwraith kept; the TCL tab on Home comes from Google TV itself and stays; reboot-checked twice, three days of use; on the Vietnam 55C6K the reference launcher took Home once the setupwraith-owned Wi-Fi was re-joined, and the remote's buttons worked with no key helper (one day of use, [README](tcl-65c6k-google-tv/README.md))",
+  "notes": "Same firmware build as the C755 and 85RM7L lists (UTT2.250416.001 AU02); TCL promos, TCL Live, store/hotel demo, Alexa, soundbar updater and the Android 14 ad services; TCL Home (com.tcl.dashboard) off too, unlike the C755, with every remote button still working; Assistant, Play Games and YouTube Music off by choice; Chromecast, AirPlay, Miracast, T-Cast (so ttvs stays), game bar and USB media kept; debloat only, stock launcher and setupwraith kept; the TCL tab on Home comes from Google TV itself and stays; reboot-checked twice, three days of use; on the Vietnam 55C6K the reference launcher took Home once the setupwraith-owned Wi-Fi was re-joined, and the remote's buttons worked with no key helper; on the India 55C6K the launcher took Home, Onkyo 2.1 audio packages were kept, and the remote's Channel and CH buttons were remapped ([README](tcl-65c6k-google-tv/README.md))",
   "match_tokens": [
    "001",
    "250416",
@@ -9480,16 +10056,17 @@
   "brand_slug": "tcl",
   "platform": "android-tv",
   "os": "Google TV 11",
-  "tv": "TCL 65C735 (Smart TV Pro, G05, MediaTek), France; also TCL 55C728, Turkey, TCL 65C935, France, and TCL 65C745, France",
+  "tv": "TCL 65C735 (Smart TV Pro, G05, MediaTek), France; also TCL 55C728, Turkey, TCL 65C935, France, TCL 65C745, France, and TCL 55C735, France",
   "method": "adb-disable",
   "lists": [
    "models/android-tv/tcl-65c735/debloat.txt"
   ],
   "package_count": 29,
-  "notes": "TCL analytics, TGuard, promo dashboard and content feed, unused preloads; voice and AirPlay off by choice, Chromecast and Miracast kept; launcherx + setupwraith off (survived reboot); remote app buttons need launcherx (keycodes noted); USB port goes to gadget mode after a reboot with USB debugging on; on the 55C728 and 65C935 ttvs stays (it holds the system updater) and config.json maps the remote's buttons; the 65C935 notes a second setupwraith-owned SSID cleared with `cmd wifi forget-network`, Input 178, and HomeKeyService left unbound after a theme push; the 65C745 notes its source button's scancode 365 and the volume stepping twice with a key helper bound",
+  "notes": "TCL analytics, TGuard, promo dashboard and content feed, unused preloads; voice and AirPlay off by choice, Chromecast and Miracast kept; launcherx + setupwraith off (survived reboot); remote app buttons need launcherx (keycodes noted); USB port goes to gadget mode after a reboot with USB debugging on; on the 55C728 and 65C935 ttvs stays (it holds the system updater) and config.json maps the remote's buttons; the 65C935 notes a second setupwraith-owned SSID cleared with `cmd wifi forget-network`, Input 178, and HomeKeyService left unbound after a theme push; the 65C745 notes its source button's scancode 365 and the volume stepping twice with a key helper bound; the 55C735 (AR28) keeps ttvs, the Assistant and AirPlay, forgot a hidden setupwraith-owned SSID before disabling it, and needed a reboot before HomeKeyService bound",
   "match_tokens": [
    "2024-11-05",
    "55c728",
+   "55c735",
    "65c735",
    "65c745",
    "65c935",
@@ -10321,19 +10898,20 @@
   "brand_slug": "tcl",
   "platform": "android-tv",
   "os": "Google TV 14",
-  "tv": "TCL C89B 85\", 2024, a local variant of the C855; also TCL 65C89K, France (G08, G08_4K_GB, MediaTek tcl9618)",
+  "tv": "TCL C89B 85\", 2024, a local variant of the C855; also TCL 65C89K, France, and TCL 55QM8B, Germany (G08, G08_4K_GB, MediaTek tcl9618)",
   "method": "adb-disable",
   "lists": [
    "models/android-tv/tcl-c89b-google-tv/debloat.txt"
   ],
   "package_count": 31,
-  "notes": "Same product and build as the 85RM7L list (UTT2.250416.001 AU02), plus T-Cast, TCL HOME (com.tcl.dashboard), game bar, hearing test, T-solo, the Google TV storefront and the Android 14 ad services; Chromecast, AirPlay, Miracast, Assistant and USB media kept; launcherx + setupwraith off for the launcher (on Ethernet; setupwraith owned no network); config.json maps the gear (83) and the Netflix, Prime Video and YouTube buttons (4062, 4099, 190); HomeKeyService needs AUTO_START plus `appops write-settings` to bind after a restart; C89B tested for one day, 65C89K second unit used for several days with Game Bar and hearing test kept",
+  "notes": "Same product and build as the 85RM7L list (UTT2.250416.001 AU02), plus T-Cast, TCL HOME (com.tcl.dashboard), game bar, hearing test, T-solo, the Google TV storefront and the Android 14 ad services; Chromecast, AirPlay, Miracast, Assistant and USB media kept; launcherx + setupwraith off for the launcher (on Ethernet; setupwraith owned no network); config.json maps the gear (83) and the Netflix, Prime Video and YouTube buttons (4062, 4099, 190); HomeKeyService needs AUTO_START plus `appops write-settings` to bind after a restart; C89B tested for one day, 65C89K second unit used for several days with Game Bar and hearing test kept; 55QM8B third unit on Wi-Fi, one session: setupwraith owned the Wi-Fi (re-join first), the same buttons work, and with HomeKeyService a held volume steps once unless `volume_pauses_filter` is on (tap, then hold within 4 s)",
   "match_tokens": [
    "001",
    "1-4",
    "2024",
    "2026-10-21",
    "250416",
+   "55qm8b",
    "65c89k",
    "au02",
    "c855",
@@ -10347,6 +10925,43 @@
   ],
   "status": "tested-by-submitter",
   "source": "https://github.com/Gathin23/cleanyourtv/tree/main/examples/tcl-c89b-google-tv"
+ },
+ {
+  "id": "tcl-es560",
+  "brand": "TCL",
+  "brand_slug": "tcl",
+  "platform": "android-tv",
+  "os": "Android TV 9",
+  "tv": "TCL ES560, likely 32ES560 (TCL-built UnionTV, Realtek RT2841, TCL-EU-RT2841-S1)",
+  "method": "adb-disable",
+  "lists": [
+   "models/android-tv/tcl-es560/debloat.txt"
+  ],
+  "package_count": 26,
+  "notes": "Same build as the TCL UnionTV and Thomson 32HE5800 lists, EU firmware line; TCL BI analytics, promo rows/partner customizer, TCL Channel, app store, cleaner, user center; Ambient Mode, TTS and TalkBack off; Assistant, Chromecast and firmware updater kept; user center comes back on by itself; size from the TV's config file, type plate not read",
+  "match_tokens": [
+   "006",
+   "105034",
+   "180905",
+   "2020-09-05",
+   "20201115",
+   "32-bit",
+   "32-inch",
+   "32es560",
+   "40es560",
+   "armeabi-v7a",
+   "es56",
+   "es560",
+   "ppr2",
+   "rt2841",
+   "rtd284x",
+   "soc_32_6o8w",
+   "tcl-es560",
+   "tcl-eu-rt2841-s1",
+   "v8-r41kt01-lf1v325"
+  ],
+  "status": "tested-by-submitter",
+  "source": "https://github.com/Gathin23/cleanyourtv/tree/main/examples/tcl-es560"
  },
  {
   "id": "tcl-g03-google-tv",
@@ -10554,7 +11169,7 @@
    "models/android-tv/tcl-g08-eu-android12/debloat.txt"
   ],
   "package_count": 32,
-  "notes": "Older EU G08 build (STT2.221228.001 AS34): the US list applies only partially — no Samba-ACR ttvs payload, no AirplayAPK, no hotelmenu/TV+/e-sticker preloads, no Android 14 ad services. TCL pushes/demo/help, duplicate webviews, Mediatek casting leftovers, Play Movies, TTS, dreamx, printspooler; suspension/interactive/ttvs listed as DO-NOT-DISABLE (they host the Source-key QuickPanel and the TIAS source overlay — disabling kills the remote Source key, verified fix on a live set); stock launcher kept; debloat only. A second unit, a 75Q7C on AS36 with five more TCL preloads, runs the launcher as Home: remote keycodes and the volume-repeat trade in the README. A third unit, a 50C805X1 on AS34 (France), has those preloads too: four of them and four Google extras are now in the list, com.tcl.guard stays enabled (disabled, the system retries it every 5 s); casting still works there with setupwraith disabled; a fourth unit, a 55C7K on the same STT2.221228.001 build on Wi-Fi, runs the launcher as Home with YouTube (scan 245)→SmartTube and Disney+ (scan 762)→JioHotstar via HomeKeyService, volume repeat traded for the buttons",
+  "notes": "Older EU G08 build (STT2.221228.001 AS34): the US list applies only partially — no Samba-ACR ttvs payload, no AirplayAPK, no hotelmenu/TV+/e-sticker preloads, no Android 14 ad services. TCL pushes/demo/help, duplicate webviews, Mediatek casting leftovers, Play Movies, TTS, dreamx, printspooler; suspension/interactive/ttvs listed as DO-NOT-DISABLE (they host the Source-key QuickPanel and the TIAS source overlay — disabling kills the remote Source key, verified fix on a live set); stock launcher kept; debloat only. A second unit, a 75Q7C on AS36 with five more TCL preloads, runs the launcher as Home: remote keycodes and the volume-repeat trade in the README. A third unit, a 50C805X1 on AS34 (France), has those preloads too: four of them and four Google extras are now in the list, com.tcl.guard stays enabled (disabled, the system retries it every 5 s); casting still works there with setupwraith disabled; a fourth unit, a 55C7K on the same STT2.221228.001 build on Wi-Fi, runs the launcher as Home with YouTube (scan 245)→SmartTube and Disney+ (scan 762)→JioHotstar via HomeKeyService, volume repeat traded for the buttons. A fifth unit, a 50Q6C on AS35 (Czechia, stock launcher kept), runs 29 of the list offline: UpdatePeripheral, airplaydaemon and tts kept enabled, Cast and Miracast verified after reboots",
   "match_tokens": [
    "001",
    "2026",
@@ -10647,13 +11262,13 @@
   "brand_slug": "tcl",
   "platform": "android-tv",
   "os": "Google TV 12",
-  "tv": "TCL 55\" 4K Google TV, 2023 (G10, G10_4K_US_NF); also TCL 55P6K, Spain and TCL 43P69K, Netherlands (G10_4K_GB_NF_32BIT); and TCL 55Q651G, US (G10_4K_US_NF); and TCL 55Q6CS, India (G10_4K_GB); and TCL 55C6KS, Italy (G10_4K_GB); and TCL 55C69B, France (G10_4K_GB)",
+  "tv": "TCL 55\" 4K Google TV, 2023 (G10, G10_4K_US_NF); also TCL 55P6K, Spain and TCL 43P69K, Netherlands (G10_4K_GB_NF_32BIT); and TCL 55Q651G, US (G10_4K_US_NF); and TCL 55Q6CS, India (G10_4K_GB); and TCL 55C6KS, Italy (G10_4K_GB); and TCL 55C69B, France (G10_4K_GB); and TCL 55QM5K, US (G10_4K_US_NF)",
   "method": "adb-disable",
   "lists": [
    "models/android-tv/tcl-g10-google-tv/debloat.txt"
   ],
   "package_count": 17,
-  "notes": "TCL TV+, TCL Live, store demo, smartlink installer; setupwraith also claims Home once the stock launcher is disabled; on the Netherlands 43P69K, Samba TV ACR, logkit and ttvs shipped enabled (disabled and reboot-checked), setupwraith owned the setup Wi-Fi (re-join first), and dreamx was re-enabled to keep the screensaver menu; on the US 55Q651G, Samba TV ACR and logkit shipped enabled too, and with no antenna channels TCL Live is Live TV's only source; unit-specific packages are optional; on the India 55Q6CS the same telemetry shipped enabled, setupwraith owned the Wi-Fi, and the remote's Input (4514) and Dashboard (4001) need the key helpers, which cost the held-volume ramp; on a C6KS (G10_4K_GB) with launcherx disabled, the app buttons and the gear are dead; a log-reading accessibility service (READ_LOGS, not in this repo) brings them back and keeps the held-volume ramp ([note](../docs/devices/tcl-g10-app-keys.md))",
+  "notes": "TCL TV+, TCL Live, store demo, smartlink installer; setupwraith also claims Home once the stock launcher is disabled; on the Netherlands 43P69K, Samba TV ACR, logkit and ttvs shipped enabled (disabled and reboot-checked), setupwraith owned the setup Wi-Fi (re-join first), and dreamx was re-enabled to keep the screensaver menu; on the US 55Q651G, Samba TV ACR and logkit shipped enabled too, and with no antenna channels TCL Live is Live TV's only source; unit-specific packages are optional; on the India 55Q6CS the same telemetry shipped enabled, setupwraith owned the Wi-Fi, and the remote's Input (4514) and Dashboard (4001) need the key helpers, which cost the held-volume ramp; on a C6KS (G10_4K_GB) with launcherx disabled, the app buttons and the gear are dead; a log-reading accessibility service (READ_LOGS, not in this repo) brings them back and keeps the held-volume ramp ([note](../docs/devices/tcl-g10-app-keys.md)); on the US 55QM5K every package of this list is installed and it ships hotelmenu, a Roku ad-SDK and US streaming preloads (optional block at the end), ttvs hosts the firmware updater (kept), setupwraith owned the setup Wi-Fi (re-join first), casting still worked with the wizard off, and its BT_RC923A remote sends scancodes, not keycodes: the folder's config.json maps the app buttons, while the gear needs settings_key_scancodes, a config.xml-only key",
   "match_tokens": [
    "001",
    "172",
@@ -10668,6 +11283,7 @@
    "55p6k",
    "55q651g",
    "55q6cs",
+   "55qm5k",
    "g10",
    "g10_4k_gb_nf_32bit",
    "g10_4k_us_nf",
@@ -10871,7 +11487,7 @@
   "brand_slug": "tcl",
   "platform": "android-tv",
   "os": "Android TV 9",
-  "tv": "TCL UnionTV, Latin America (TCL-built like Thomson 32HE5800, Realtek RT2841); also confirmed on a TCL 32S6500S and L40S6500 (persist.tcl.client_type TCL-LA-RT41KB-S1) and a TCL-CA-RT41KA-S1 unit",
+  "tv": "TCL UnionTV, Latin America (TCL-built like Thomson 32HE5800, Realtek RT2841); also confirmed on a TCL 32S6500S and L40S6500 (persist.tcl.client_type TCL-LA-RT41KB-S1), a TCL-CA-RT41KA-S1 unit and an EU TCL 32S5209K (TCL-EU-RT2841-S1)",
   "method": "adb-disable",
   "lists": [
    "models/android-tv/tcl-uniontv-latin-america/debloat.txt"
@@ -10887,6 +11503,7 @@
    "2026-10-19",
    "2026-10-26",
    "32he5800",
+   "32s5209k",
    "32s6500s",
    "l40s6500",
    "ppr2",
@@ -10894,6 +11511,7 @@
    "rtd284x",
    "sem-la-rt41kb-s1",
    "tcl-ca-rt41ka-s1",
+   "tcl-eu-rt2841-s1",
    "tcl-la-rt41kb-s1",
    "thom-eu-rt2841-s1",
    "thomson-32he5800"
@@ -11149,8 +11767,8 @@
   "lists": [
    "models/android-tv/tim-timvision-box-uzw4010tim/debloat.txt"
   ],
-  "package_count": 43,
-  "notes": "Operator streaming box: TIMVISION telemetry, Smarts monitoring agent, Movenda OMA-DM device management, Technicolor boot trace, Google feedback and recommendation rows, TIM smart home; TIMVISION service parts commented out (off on this set, no subscription); voice, mirroring and preloaded apps off by choice; the stock launcher is the TIMVISION app with HOME priority 2, so the new launcher needs it disabled (`STOCK_LAUNCHER=timvision.launcher`); Chromecast, updaters and remote services kept; reboot-checked",
+  "package_count": 50,
+  "notes": "Operator streaming box with DVB-T/T2 tuner: timvision.launcher hosts antenna Live TV (BoxPlayerV2Activity); TIM telemetry, OMA-DM, Broadpeak nanoCDN and commercial preloads disabled; Chromecast, Assistant and tuner preserved; supports complete debloat or keeping timvision.launcher for antenna DTT; reboot-checked",
   "match_tokens": [
    "001",
    "0412",
@@ -11386,6 +12004,31 @@
   ],
   "status": "tested-by-submitter",
   "source": "https://github.com/Gathin23/cleanyourtv/tree/main/examples/toshiba-shandao-atv11"
+ },
+ {
+  "id": "turbo-x-40as60t",
+  "brand": "Turbo-X",
+  "brand_slug": "turbo-x",
+  "platform": "android-tv",
+  "os": "Android TV 14",
+  "tv": "Turbo-X 40AS60T (Vestel-built, BARTU_TurboX, menlo, MediaTek mt5867), Greece",
+  "method": "adb-disable",
+  "lists": [
+   "models/android-tv/turbo-x-40as60t/debloat.txt"
+  ],
+  "package_count": 27,
+  "notes": "Same Vestel platform as Cecotec shandao: Vestel reporter/smartlogger/speedup/smartcenter, ad services, feedback; fusion.android.tv.demo KEPT (Input key); Assistant, Chromecast, Miracast, Freeview Play off by choice; Prime Video, Google Play, Menu and star keys remapped by scancode ([README](turbo-x-40as60t/README.md))",
+  "match_tokens": [
+   "002",
+   "16342942",
+   "2026-09-01",
+   "260914",
+   "40as60t",
+   "mt5867",
+   "turbo-x-40as60t"
+  ],
+  "status": "tested-by-submitter",
+  "source": "https://github.com/Gathin23/cleanyourtv/tree/main/examples/turbo-x-40as60t"
  },
  {
   "id": "turkcell-tv-plus-4k-box-dv6069y",
@@ -12461,6 +13104,34 @@
   "source": "https://github.com/Gathin23/cleanyourtv/tree/main/examples/xiaomi-mitv-axso2"
  },
  {
+  "id": "xiaomi-mitv-axso2-android11",
+  "brand": "Xiaomi",
+  "brand_slug": "xiaomi",
+  "platform": "android-tv",
+  "os": "Android TV 11",
+  "tv": "Xiaomi MiTV-AXSO2 (dangalUHD, Amlogic, India), Android 11 firmware RTT0.211201.001.1150",
+  "method": "adb-disable",
+  "lists": [
+   "models/android-tv/xiaomi-mitv-axso2-android11/debloat.txt"
+  ],
+  "package_count": 25,
+  "notes": "Same model after its Android 11 update: PatchWall, Mi Channel, Mi TV+, Sensara, Mi analytics and the TV Quality Service log uploader, TV Manager, partner auto-installs, preloads; Assistant, screen mirroring, Aha and MX Player commented out (off on this set by choice); updater, Chromecast, phone remote and USB media kept; the firmware opens Live TV at every power-on, and the key helper that sends it back to Home turns a held volume into tap, then hold",
+  "match_tokens": [
+   "001",
+   "1150",
+   "2024-02-05",
+   "2026",
+   "211201",
+   "6432",
+   "mitv-axso2",
+   "rtt0",
+   "xiaomi-mitv-axso2",
+   "xiaomi-mitv-axso2-android11"
+  ],
+  "status": "tested-by-submitter",
+  "source": "https://github.com/Gathin23/cleanyourtv/tree/main/examples/xiaomi-mitv-axso2-android11"
+ },
+ {
   "id": "xiaomi-mitv-ayfr0",
   "brand": "Xiaomi",
   "brand_slug": "xiaomi",
@@ -12537,6 +13208,34 @@
   ],
   "status": "tested-by-submitter",
   "source": "https://github.com/Gathin23/cleanyourtv/tree/main/examples/xiaomi-mitv-mftr0"
+ },
+ {
+  "id": "xiaomi-mitv-mftr0-android14",
+  "brand": "Xiaomi",
+  "brand_slug": "xiaomi",
+  "platform": "android-tv",
+  "os": "Android 14 (HyperOS TV 3, CN build)",
+  "tv": "Xiaomi MiTV-MFTR0 (freeguy, MediaTek mt9653), China firmware OS3.0.101.0.UFTMATV (HyperOS TV 3)",
+  "method": "adb-disable",
+  "lists": [
+   "models/android-tv/xiaomi-mitv-mftr0-android14/debloat.txt"
+  ],
+  "package_count": 27,
+  "notes": "OS3 sibling of the Android 11 [MiTV-MFTR0 list](xiaomi-mitv-mftr0/), one build between ASTR0's OS3.0.106 and MFFU0's OS3.0.115: the `com.ts.launcher` allowlist trampoline takes Home here too, and the Inputs rows stay inert until `input_action` and the port numbers are set (README.md here); same Hyper screensaver and AOSP ad-services modules as the other OS3 sets; no WPS, no `com.mitv.overseaservice` on the OS2 list but present here",
+  "match_tokens": [
+   "101",
+   "2026-11-10",
+   "astr0",
+   "mffu0",
+   "mitv-mftr0",
+   "mt9653",
+   "os2",
+   "os3",
+   "xiaomi-mitv-mftr0",
+   "xiaomi-mitv-mftr0-android14"
+  ],
+  "status": "tested-by-submitter",
+  "source": "https://github.com/Gathin23/cleanyourtv/tree/main/examples/xiaomi-mitv-mftr0-android14"
  },
  {
   "id": "xiaomi-mitv-moeu0",
@@ -12785,7 +13484,7 @@
    "models/android-tv/xiaomi-mitv-mssp2/debloat.txt"
   ],
   "package_count": 16,
-  "notes": "PatchWall, Mi analytics, TV Manager, partner auto-installs, Google feedback/bug reports, old leanback home still installed; hotkeys, phone remote, Media Player, updater and Chromecast kept; empty Live TV/HDMI screenshots",
+  "notes": "PatchWall, Mi analytics, TV Manager, partner auto-installs, Google feedback/bug reports, old leanback home still installed; hotkeys, phone remote, Media Player, updater and Chromecast kept; empty Live TV/HDMI screenshots; Live TV channel keys: [notes](xiaomi-mitv-mssp2/README.md)",
   "match_tokens": [
    "2020-07-05",
    "4621",
@@ -12794,6 +13493,32 @@
   ],
   "status": "tested-by-submitter",
   "source": "https://github.com/Gathin23/cleanyourtv/tree/main/examples/xiaomi-mitv-mssp2"
+ },
+ {
+  "id": "xiaomi-mitv-mssp2-android11",
+  "brand": "Xiaomi",
+  "brand_slug": "xiaomi",
+  "platform": "android-tv",
+  "os": "Android TV 11",
+  "tv": "Xiaomi MiTV-MSSP2 (volver, MediaTek), Android 11 firmware RTT2.211214.001.933, low-RAM",
+  "method": "adb-disable",
+  "lists": [
+   "models/android-tv/xiaomi-mitv-mssp2-android11/debloat.txt"
+  ],
+  "package_count": 21,
+  "notes": "Same model after its Android 11 update: PatchWall, Mi Channel, Mi TV+, Mi analytics, TV Manager, partner auto-installs, preloads; the Xiaomi updater re-enables PatchWall and Mi TV+ when it updates them (`check.py --fix`); updater, Assistant, Chromecast and Netflix button kept",
+  "match_tokens": [
+   "001",
+   "2023-12-05",
+   "211214",
+   "933",
+   "mitv-mssp2",
+   "rtt2",
+   "xiaomi-mitv-mssp2",
+   "xiaomi-mitv-mssp2-android11"
+  ],
+  "status": "tested-by-submitter",
+  "source": "https://github.com/Gathin23/cleanyourtv/tree/main/examples/xiaomi-mitv-mssp2-android11"
  },
  {
   "id": "xiaomi-mitv-mssp3",

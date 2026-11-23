@@ -9,11 +9,11 @@ com.google.android.backdrop                             # 3/6 ambient photo scre
 com.google.android.partnersetup                         # 3/6 partner/OEM attribution and RLZ pings
 com.google.android.syncadapters.calendar                # 3/6 calendar sync, on a TV
 com.google.android.tvrecommendations                    # 3/6 recommendation / sponsored rows (see header)
+com.mstar.android.tv.disclaimercustomization            # 3/6 first-setup disclaimer popup
 fusion.android.tv.demo                                  # 3/6 retail/shop demo mode
 com.google.android.play.games                           # 2/6 Play Games
 com.google.android.tungsten.setupwraith                 # 2/6
 com.google.android.videos                               # 2/6 Google TV / Play Movies storefront
 com.google.android.youtube.tvmusic                      # 2/6 YouTube Music
 com.jio.media.stb.ondemand                              # 2/6 JioTV / JioHotstar India streaming
-com.mstar.android.tv.disclaimercustomization            # 2/6 first-setup disclaimer popup
 com.vestel.vestelreporter                               # 2/6 Vestel reporter: INTERNET + BOOT_COMPLETED, no UI

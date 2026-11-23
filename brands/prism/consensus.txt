@@ -5,4 +5,4 @@
 # Format: <package>  # <count>/<lists> <most common note>
 
 com.google.android.apps.tv.launcherx                    # 2/2
-com.google.android.tungsten.setupwraith                 # 2/2 setup wizard; on this set YouTube casting from a phone still works after a reboot (tested 2026-10-25)
+com.google.android.tungsten.setupwraith                 # 2/2 setup wizard; com.realtek.systemservice re-enables it at every boot
